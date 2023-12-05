@@ -16,18 +16,6 @@ export default function Footer() {
           height={100}
           className="w-screen h-40"
         />
-        {/* <Image
-          src="/assets/footer_black.png"
-          alt="Footer graffiti"
-          width="900"
-          height={100}
-        />
-        <Image
-          src="/assets/footer_black.png"
-          alt="Footer graffiti"
-          width="900"
-          height={100}
-        /> */}
       </picture>
       <footer className="flex flex-col w-screen justify-between">
         <div className="flex flex-wrap justify-center space-x-2 items-center text-center z-10">
