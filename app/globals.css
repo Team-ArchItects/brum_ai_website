@@ -4,6 +4,8 @@
 
 :root {
   --foreground-rgb: 0, 0, 0;
+  --text-color-rgb: 255, 255, 255;
+  --footer-bg-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
 }
@@ -11,6 +13,8 @@
 @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
+    --text-color-rgb: 0, 0, 0;
+    --footer-bg-rgb: 255, 255, 255;
     --background-start-rgb: 0, 0, 0;
     --background-end-rgb: 0, 0, 0;
   }
@@ -24,4 +28,9 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+}
+
+footer {
+  color: rgb(var(--text-color-rgb));
+  background: rgb(var(--footer-bg-rgb));
 }
