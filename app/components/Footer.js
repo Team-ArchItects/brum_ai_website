@@ -1,4 +1,4 @@
-import socLogo from "../../images/original.png"
+// import socLogo from "../../images/original.png"
 import Image from 'next/image'
 
 export default function Footer() {
@@ -6,13 +6,13 @@ export default function Footer() {
       <section className="flex flex-col gap-4 width-screen h-4 justify-between p-16 bg-navy text-white">
         <div className="flex justify-center space-x-2 items-center">
         <Image  
-        src={socLogo}
+        src="/assets/original.png"
         width={150}
         height={150}
         alt="School of Code logo"
       />
         <Image  
-        src={socLogo}
+        src="/assets/original.png"
         width={150}
         height={150}
         alt="School of Code logo"
