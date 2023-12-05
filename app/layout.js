@@ -6,8 +6,8 @@ import Footer from './components/Footer'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
-  title: 'BrumAI Test Site',
-  description: 'BrumAI Website made by ArchItect',
+  title: 'Brum.AI',
+  description: 'The home of AI in the Midlands.',
 }
 
 export default function RootLayout({ children }) {
