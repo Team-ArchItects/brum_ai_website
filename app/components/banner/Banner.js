@@ -14,10 +14,11 @@ import Button from 'app/components/banner/Button.js'
 
 const Banner = () => {
     return (
-      <div className="bg-[url('/assets/cityphoto.png')] bg-cover bg-center w-screen h-96">
+      <div className="bg-[url('/assets/cityphoto.png')] bg-cover bg-center w-screen h-96 flex">
       <Image src="/assets/banner_content.png" width="500" height="250" alt="Banner" className="mt-16 ml-12"/>
-  
+      <section className="justify-end">
       <Button />
+      </section>
 
       </div>
     );
