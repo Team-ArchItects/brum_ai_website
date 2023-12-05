@@ -1,10 +1,10 @@
 import Image from "next/image";
 import Link from "next/link";
-import MeetupLink from "./header components/Meetup_Link";
 import LinkedInLink from "./header components/LinkedIn_Link";
 import DiscordLink from "./header components/Discord_Link";
 import XLink from "./header components/X-Link";
 import InstagramLink from "./header components/Instargram_Link";
+import MeetupLink from "./header components/meetup_link";
 
 export default function Header() {
   return (
