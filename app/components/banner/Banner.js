@@ -13,7 +13,7 @@ import Image from 'next/image';
 
 const Banner = () => {
     return (
-      <div className="bg-[url('/assets/cityphoto.png')] w-screen h-96">
+      <div className="bg-[url('/assets/cityphoto.png')] bg-cover w-screen h-96">
         {/* <Image src="/assets/cityphoto.png" width="50" height="50" alt="Banner" /> */}
         <div className="banner-content">
           <h1>aGuideHub</h1>
