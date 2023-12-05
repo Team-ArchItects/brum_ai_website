@@ -18,7 +18,7 @@ export default function Header() {
       </div>
       <div className="flex justify-center">
       <Image  
-        src={logo}
+        src="/assets/orange_logo.png"
         width={100}
         height={100}
         alt="Brumai Logo in orange"
@@ -27,7 +27,7 @@ export default function Header() {
       <div className="flex justify-end space-x-2 items-center">
       <a href='https://www.meetup.com/brum-ai/' target="_blank" rel="noopener noreferrer"> 
       <Image  
-        src={meetupLogo}
+        src="/assets/meetup_white.svg"
         width={25}
         height={25}
         alt="LinkedIn logo linking to the BRUM AI LinkedIn page"
@@ -35,7 +35,7 @@ export default function Header() {
       </a>
       <a href='https://www.linkedin.com/company/brumai/' target="_blank" rel="noopener noreferrer"> 
       <Image  
-        src={linkedinLogo}
+        src="/assets/linkedin_icon_white.svg"
         width={25}
         height={25}
         alt="meetup logo linking to the BRUM AI meetup page"
@@ -43,7 +43,7 @@ export default function Header() {
       </a>
       <a href='https://discord.gg/RJSU67kZcJ' target="_blank" rel="noopener noreferrer"> 
       <Image  
-        src={discordLogo}
+        src="/assets/discord_white.svg"
         width={25}
         height={25}
         alt="Discord logo linking to the BRUM AI discord group"
@@ -51,15 +51,15 @@ export default function Header() {
       </a>
       <a href='https://x.com/brum_AI' target="_blank" rel="noopener noreferrer"> 
       <Image  
-        src={xingLogo}
+        src="/assets/x_white.png"
         width={25}
         height={25}
         alt="X logo linking to the BRUM AI X page"
       />
       </a>
-      <a href='https://www.linkedin.com/company/brumai/' target="_blank" rel="noopener noreferrer"> 
+      <a href='https://www.instagram.com/brum_ai_/' target="_blank" rel="noopener noreferrer"> 
       <Image  
-        src={instagramLogo}
+        src="/assets/instragram_icon_white.svg"
         width={25}
         height={25}
         alt="Instagram logo linking to the BRUM AI instagram page"
