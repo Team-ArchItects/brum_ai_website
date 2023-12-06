@@ -17,14 +17,17 @@ const dummyData = [
 
 const Events = () => {
     return (
-    <section className="grid grid-cols-2 gap-4 place-content-evenly items-center text-citrus">
-      <div className="bg-[url('/assets/event1_white.png')] bg-cover bg- bg-center w-96 h-96 flex">
-      <p className="absolute py-2.5 pl-20 bottom-0 inset-x text-5xl text-center leading-4">OCT 24</p>
-      </div>
-      <div className="bg-[url('/assets/event2_white.png')] bg-cover bg-center w-96 h-96 flex">
-      <p className="absolute py-2.5 pl-20 bottom-0 inset-x text-5xl text-center leading-4">NOV 24</p>
-      </div>
-    </section>
+        <section className="text-citrus text-center text-3xl py-2">
+            <h1>Upcoming Events:</h1>
+                <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4 place-content-evenly items-center ">
+                    <div className="bg-[url('/assets/event1_white.png')] bg-contain bg-center bg-no-repeat sm:w-64 md:w-80 lg:w-96 xl:w-102 sm:h-64 md:h-80 lg:h-96 xl:h-102 flex" >
+                        <p className="py-2.5 pl-20 bottom-0 inset-x text-5xl  leading-4">OCT 24</p>
+                    </div>
+                    <div className="bg-[url('/assets/event2_white.png')] bg-contain bg-center bg-no-repeat sm:w-64 md:w-80 lg:w-96 xl:w-102 sm:h-64 md:h-80 lg:h-96 xl:h-102 flex">
+                        <p className="py-2.5 pl-20 bottom-0 inset-x text-5xl leading-4">NOV 24</p>
+                    </div>
+                </section>
+        </section>
     );
   }
   
