@@ -6,16 +6,24 @@ export default function Footer() {
     <section className="flex flex-col w-screen justify-between">
       <picture className=" flex z-0">
         <source
-          srcSet="/assets/footer_white.png"
+          srcSet="/assets/cropped_footer_svg_black.svg"
           media="(prefers-color-scheme: dark)"
         />
-        <Image
-          src="/assets/footer_black.png"
+                <Image
+          src="/assets/cropped_footer_svg_black.svg"
           alt="Footer graffiti"
-          width="900"
+          width="1800"
           height={100}
-          className="w-screen h-40"
+          className="h-40 w-6/12 scale-x-[-1]"
         />
+        <Image
+          src="/assets/cropped_footer_svg_black.svg"
+          alt="Footer graffiti"
+          width="1800"
+          height={100}
+          className="h-40 w-6/12"
+        />
+
       </picture>
       <footer className="flex flex-col w-screen justify-between">
         <div className="flex flex-wrap justify-center space-x-2 items-center text-center z-10">
