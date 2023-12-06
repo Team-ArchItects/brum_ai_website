@@ -25,7 +25,7 @@ const Events = () => {
                         </div>
                         <div className="relative">
                             <div className="bg-[url('/assets/event2_white.png')] bg-contain bg-center bg-no-repeat w-64 md:w-80 lg:w-96 xl:w-102 h-64 md:h-80 lg:h-96 xl:h-102 flex">
-                                <p className="py-20 bottom-0 inset-x text-5xl leading-4 absolute m-auto left-0 right-0">NOV 24</p>
+                                <p className="py-20 bottom-0 inset-x text-5xl leading-4 absolute m-auto left-0 right-0">NOV 25</p>
                             </div>
                         </div>
                 </section>
