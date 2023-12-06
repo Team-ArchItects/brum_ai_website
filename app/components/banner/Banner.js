@@ -16,7 +16,7 @@ const Banner = () => {
     return (
       <div className="bg-[url('/assets/cityphoto.png')] bg-cover bg-center w-screen h-96 flex-row">
       <section className="flex justify-end mr-6 mt-6">
-      <Button />
+      <Button text={"Next event"} location={"/events"}/>
       </section>
       <Image src="/assets/banner_content.png" width="500" height="250" alt="Banner" className="ml-12"/>
       </div>

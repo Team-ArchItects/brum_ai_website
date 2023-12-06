@@ -1,20 +1,31 @@
 // import socLogo from "../../images/original.png"
 import Image from "next/image";
+import Button from "./banner/Button";
 
 export default function Footer() {
+
   return (
     <section className="flex flex-col w-screen justify-between">
       <picture className=" flex z-0">
         <source
-          srcSet="/assets/footer_white.png"
+          srcSet="/assets/cropped_footer_white.png"
           media="(prefers-color-scheme: dark)"
         />
-        <Image
-          src="/assets/footer_black.png"
+                <Image
+          src="/assets/cropped_footer_black.png"
           alt="Footer graffiti"
-          width="900"
+          width="1800"
           height={100}
-          className="w-screen h-40"
+          className="h-40 w-6/12 scale-x-[-1]"
+        />
+        <Image
+          src="/assets/cropped_footer_black.png"
+          alt="Footer graffiti"
+          width="2000"
+          height={160}
+          // sizes="50vw"
+          // fill={true}
+          className="w-6/12 h-40 ml-[-1px]"
         />
       </picture>
       <footer className="flex flex-col w-screen justify-between">
@@ -25,20 +36,32 @@ export default function Footer() {
             height={100}
             alt="School of Code logo"
           />
+          <picture>
+            <source srcSet="/assets/huel_black.png" media="(prefers-color-scheme: dark)" />
           <Image
-            src="/assets/original.png"
+            src="/assets/huel_white.png"
             width={100}
             height={100}
             alt="School of Code logo"
           />
+          </picture>
+          <picture>
+            <source srcSet="/assets/aston_black.png" media="(prefers-color-scheme: dark)" />
+          <Image
+            src="/assets/aston_white.png"
+            width={100}
+            height={100}
+            alt="School of Code logo"
+          />
+          </picture>
           <p className="w-full p-3">Supported by these Amazing Companies</p>
         </div>
-        <div className="text-right z-10">
-          <p className="mr-10">Contact Us Button</p>
+        <div className="flex justify-end z-10 mr-56 mb-5">
+          <Button text={"Contact Us"} location={"/contact"}/>
         </div>
         <div className="flex flex-wrap flex-col items-center z-10">
           <div className="p-px bg-black w-10/12 h-0 "></div>
-          <div className="w-10/12">
+          <div className="w-10/12 pb-32 pt-2 text-lg">
             <p>&copy; Copyright 2023 BrumAI. All rights reserved.</p>
           </div>
         </div>

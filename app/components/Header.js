@@ -5,14 +5,18 @@ import DiscordLink from "./header components/Discord_Link";
 import XLink from "./header components/X-Link";
 import InstagramLink from "./header components/Instargram_Link";
 import MeetupLink from "./header components/Meetup_Link";
+import Dropdown from "./header components/Dropdown";
 
 export default function Header() {
   return (
     <section className="grid grid-cols-3 gap-4 place-content-evenly items-center width-screen h-4 justify-between p-8 bg-navy text-white">
       <div className="flex justify-start ">
-        <p>Menu</p>
-        <p>Page Section</p>
-        <p>Page Section</p>
+      
+      <Dropdown />
+     
+        {/* <p>Menu &#8642;</p> */}
+        <p className="z-10">About Us</p>
+        <p className="z-10">Volunteer</p>
       </div>
       <div className="flex justify-center">
         <Image
