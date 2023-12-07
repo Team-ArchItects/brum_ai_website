@@ -1,8 +1,8 @@
-// import socLogo from "../../images/original.png"
 import Image from "next/image";
 import Button from "./banner/Button";
+import SponsorsList from "./footer components/Sponsors";
 
-export default function Footer() {
+export default function Footer({data}) {
 
   return (
     <section className="flex flex-col w-screen justify-between">
@@ -30,7 +30,7 @@ export default function Footer() {
       </picture>
       <footer className="flex flex-col w-screen justify-between">
         <div className="flex flex-wrap justify-center space-x-2 items-center text-center z-10">
-          <Image
+          {/* <Image
             src="/assets/original.png"
             width={100}
             height={100}
@@ -54,7 +54,11 @@ export default function Footer() {
             alt="School of Code logo"
           />
           </picture>
-          <p className="w-full p-3">Supported by these Amazing Companies</p>
+          <p className="w-full p-3">Supported by these Amazing Companies</p> */}
+          {data.map((sponsorsList) => {
+          return <SponsorsList key={sponsorsList.id} data={sponsorsList} />
+        })}
+        <p className="w-full p-3">BRUM AI is supported by these amazing sponsors</p>
         </div>
         <div className="flex justify-end z-10 mr-56 mb-5">
           <Button text={"Contact Us"} location={"/contact"}/>

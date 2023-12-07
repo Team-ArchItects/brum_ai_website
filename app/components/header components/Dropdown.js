@@ -1,8 +1,9 @@
 "use client"
 import {useState} from 'react'
+// import Link from "next/link";
+import MenuItems from './Menu_Items';
 
-
-export default function Dropdown() {
+export default function Dropdown({pages}) {
 
 const [dropdown, setDropdown] = useState("hidden")
 function handleOnClick() {
@@ -16,19 +17,25 @@ return (
 </button>
 
 <div id="dropdown" class={`z-10 ${dropdown} relative left-0 top-28 bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700`}>
-    <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownDefaultButton">
+    {/* <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownDefaultButton">
       <li>
-        <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Dashboard</a>
+        <Link href="/" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Home</Link>
       </li>
       <li>
-        <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Settings</a>
+        <Link href="/events" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Events</Link>
       </li>
       <li>
-        <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Earnings</a>
+        <Link href="/contact" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Contact Us</Link>
       </li>
       <li>
         <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Sign out</a>
       </li>
+    </ul> */}
+    <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownDefaultButton">
+    {pages.map((menuItems) => {
+          return <MenuItems key={menuItems.id} data={menuItems} />
+          
+        })}
     </ul>
 </div>
 </>
