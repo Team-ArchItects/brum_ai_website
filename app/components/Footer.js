@@ -1,4 +1,3 @@
-// import socLogo from "../../images/original.png"
 import Image from "next/image";
 import Button from "./banner/Button";
 import SponsorsList from "./footer components/Sponsors";
@@ -59,6 +58,7 @@ export default function Footer({data}) {
           {data.map((sponsorsList) => {
           return <SponsorsList key={sponsorsList.id} data={sponsorsList} />
         })}
+        <p className="w-full p-3">BRUM AI is supported by these amazing sponsors</p>
         </div>
         <div className="flex justify-end z-10 mr-56 mb-5">
           <Button text={"Contact Us"} location={"/contact"}/>

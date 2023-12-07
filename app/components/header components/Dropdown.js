@@ -1,6 +1,6 @@
 "use client"
 import {useState} from 'react'
-import Link from "next/link";
+// import Link from "next/link";
 import MenuItems from './Menu_Items';
 
 export default function Dropdown({pages}) {
