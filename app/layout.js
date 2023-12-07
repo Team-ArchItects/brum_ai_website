@@ -2,7 +2,7 @@ import { Be_Vietnam_Pro } from 'next/font/google'
 import './globals.css'
 import Header from './components/Header'
 import Footer from './components/Footer'
-import { headerSocials } from './data/data'
+import { headerSocials, footerSponsors } from './data/data'
 
 const beVietnamPro = Be_Vietnam_Pro({ subsets: ['latin'], weight: ['400'], })
 
@@ -17,7 +17,7 @@ export default function RootLayout({ children }) {
       <body className={beVietnamPro.className}>
       <Header data={headerSocials}/>
       {children}
-      <Footer />
+      <Footer data={footerSponsors}/>
       </body>
     </html>
   )
