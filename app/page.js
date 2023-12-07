@@ -2,6 +2,7 @@ import Image from 'next/image'
 import Banner from 'app/components/banner/Banner.js'
 import Events from 'app/components/events/Events.js'
 import Instagram from 'app/components/instagram_carousel/Instagram.js'
+import GetInvolved from 'app/components/GetInvolved.js'
 
 
 export default function Home() {
@@ -10,6 +11,7 @@ export default function Home() {
       <Banner />
       <Events />
       <Instagram />
+      <GetInvolved />
     </main>
     
   )
