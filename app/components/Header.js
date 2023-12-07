@@ -8,12 +8,12 @@ import Image from "next/image";
 import Dropdown from "./header components/Dropdown";
 import Socials from "./header components/Socials";
 
-export default function Header({data}) {
+export default function Header({data, pages}) {
   return (
     <section className="grid grid-cols-3 gap-4 place-content-evenly items-center width-screen h-4 justify-between p-8 bg-navy text-white">
       <div className="flex justify-start ">
       
-      <Dropdown />
+      <Dropdown pages={pages}/>
      
         {/* <p>Menu &#8642;</p> */}
         {/* <p className="z-10">About Us</p>
