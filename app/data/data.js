@@ -34,7 +34,7 @@ export const headerSocials = [
     {
         id: 3,
         name: "Instagram",
-        link: "/assets/instagram_icon_white.svg",
+        link: "https://www.instagram.com/brum_ai_/",
         imageDark: "/assets/instagram_icon_white.svg",
         alt: "Instagram logo linking to the BRUM AI instagram page"
     },
