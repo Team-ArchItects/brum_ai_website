@@ -1,6 +1,6 @@
 
 
-A Next.js, React and Tailwind CSS project made for BRUM.AI by Callum Woodford, David Mason, Taimoor Balal, Samantha German, Alexander Brown and Katarzyna Baginska.
+A Next.js, React and Tailwind project made for BRUM.AI by Callum Woodford, David Mason, Taimoor Balal, Samantha German, Alexander Brown and Katarzyna Baginska.
 
 <img src="architects_logo_white.png" height="100px">
 <div></div>
