@@ -8,15 +8,15 @@ export default function SocialDropdown({ data }) {
     dropdown === "hidden" ? setDropdown("block") : setDropdown("hidden");
   }
   return (
-    <section className=" flex">
+    <section className="flex">
       <button
         onClick={() => handleOnClick()}
         id="socialDropdownDefaultButton"
         data-dropdown-toggle="dropdown"
-        class="text-white bg-navy hover:bg-gray-700 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:bg-navy md:hidden"
+        class="text-white bg-navy hover:bg-gray-700 font-medium rounded-lg text-sm px-2.5 py-2.5 text-center inline-flex items-center dark:bg-navy md:hidden"
         type="button"
       >
-        Socials{" "}
+    
         <svg
           className="w-2.5 h-2.5 ms-3"
           aria-hidden="true"
@@ -32,14 +32,15 @@ export default function SocialDropdown({ data }) {
             d="m1 1 4 4 4-4"
           />
         </svg>
+        <span className="text-navy hover:bg-grey-700">_</span>Socials
       </button>
 
       <div
         id="dropdown"
-        className={`z-10 ${dropdown} absolute right-20 top-16 bg-white divide-y divide-gray-100 rounded-lg shadow w-20 dark:bg-gray-700 flex justify-end items-center  flex-col`}
+        className={`z-10 ${dropdown} absolute right-20 top-16 bg-gray-700 divide-y divide-gray-100 rounded-lg shadow w-20 flex justify-end items-center flex-col`}
       >
         <ul
-          className="py-2 text-sm text-gray-700 dark:text-gray-200 "
+          className="py-2 text-sm text-gray-700 space-x-4"
           aria-labelledby="socialDropdownDefaultButton"
         >
          {data.map((socialsList) => {

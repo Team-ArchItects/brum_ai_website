@@ -43,7 +43,7 @@ export default function Dropdown({ pages }) {
 
       <div
         id="dropdown"
-        className={`z-10 ${dropdown} absolute left-12 top-16 bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700`}
+        className={`z-10 ${dropdown} absolute left-12 top-16 bg-gray-700 divide-y divide-gray-100 rounded-lg shadow w-44`}
       >
         {/* <ul className="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownDefaultButton">
       <li>
@@ -60,7 +60,7 @@ export default function Dropdown({ pages }) {
       </li>
     </ul> */}
         <ul
-          className="py-2 text-sm text-gray-700 dark:text-gray-200"
+          className="py-2 text-sm text-white"
           aria-labelledby="dropdownDefaultButton"
         >
           {pages.map((menuItems) => {
