@@ -16,7 +16,6 @@ export default function SocialDropdown({ data }) {
         class="text-white bg-navy hover:bg-gray-700 font-medium rounded-lg text-sm px-2.5 py-2.5 text-center inline-flex items-center dark:bg-navy md:hidden"
         type="button"
       >
-    
         <svg
           className="w-2.5 h-2.5 ms-3"
           aria-hidden="true"
@@ -43,9 +42,9 @@ export default function SocialDropdown({ data }) {
           className="py-2 text-sm text-gray-700 space-x-4"
           aria-labelledby="socialDropdownDefaultButton"
         >
-         {data.map((socialsList) => {
-          return <SocialsList key={socialsList.id} data={socialsList} />
-        })}
+          {data.map((socialsList) => {
+            return <SocialsList key={socialsList.id} data={socialsList} />;
+          })}
         </ul>
       </div>
     </section>

@@ -1,6 +1,6 @@
 "use client";
 import { useState } from "react";
-// import Link from "next/link";
+import Link from "next/link";
 import MenuItems from "./Menu_Items";
 
 export default function Dropdown({ pages }) {
@@ -36,29 +36,15 @@ export default function Dropdown({ pages }) {
       </button>
 
       <div className="w-full hidden md:inline">
-        <button className="ml-4 ">Homepage</button>
-        <button className="ml-4 ">Events</button>
-        <button className="ml-4 ">Contact us</button>
+        <Link href="/" className="ml-4 bg-navy text-white">Homepage</Link>
+        <Link href="/events" className="ml-4 bg-navy text-white">Events</Link>
+        <Link href="/contact" className="ml-4 bg-navy text-white">Contact us</Link>
       </div>
 
       <div
         id="dropdown"
         className={`z-10 ${dropdown} absolute left-12 top-16 bg-gray-700 divide-y divide-gray-100 rounded-lg shadow w-44`}
       >
-        {/* <ul className="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownDefaultButton">
-      <li>
-        <Link href="/" className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Home</Link>
-      </li>
-      <li>
-        <Link href="/events" className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Events</Link>
-      </li>
-      <li>
-        <Link href="/contact" className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Contact Us</Link>
-      </li>
-      <li>
-        <a href="#" className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Sign out</a>
-      </li>
-    </ul> */}
         <ul
           className="py-2 text-sm text-white"
           aria-labelledby="dropdownDefaultButton"
