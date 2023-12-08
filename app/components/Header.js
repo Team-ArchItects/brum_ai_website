@@ -37,11 +37,14 @@ export default function Header({data, pages}) {
         <XLink />
         <InstagramLink />
       </div> */}
+      <div className="flex justify-end items-center">
       <SocialDropdown data={data}/>
-      <div className="flex justify-end space-x-4 items-center">
-        {data.map((socialsList) => {
+      <div className="hidden md:flex justify-end items-center space-x-4">
+      {data.map((socialsList) => {
           return <SocialsList key={socialsList.id} data={socialsList} />
         })}
+      </div>
+        
       </div>
     </section>
   );

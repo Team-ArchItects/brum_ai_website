@@ -1,6 +1,6 @@
 "use client";
 import { useState } from "react";
-import SocialsList from "./header components/Socials";
+import SocialsList from "./Socials";
 
 export default function SocialDropdown({ data }) {
   const [dropdown, setDropdown] = useState("hidden");
@@ -36,7 +36,7 @@ export default function SocialDropdown({ data }) {
 
       <div
         id="dropdown"
-        className={`z-10 ${dropdown} absolute right-12 top-16 bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700`}
+        className={`z-10 ${dropdown} absolute right-12 top-16 bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 flex justify-end items-center space-x-4 flex-col`}
       >
         <ul
           className="py-2 text-sm text-gray-700 dark:text-gray-200"
