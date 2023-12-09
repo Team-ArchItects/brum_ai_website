@@ -6,14 +6,17 @@ import Image from "next/image";
 // import InstagramLink from "./header components/Instargram_Link";
 // import MeetupLink from "./header components/Meetup_Link";
 import Dropdown from "./header components/Dropdown";
-import Socials from "./header components/Socials";
+import SocialsList from "./header components/Socials";
+import SocialDropdown from "./header components/Social_Dropdown";
 
 export default function Header({data, pages}) {
   return (
-    <section className="grid grid-cols-3 gap-4 place-content-evenly items-center width-screen h-4 justify-between p-8 bg-navy text-white">
+    <section className="min-w-[360px] grid grid-cols-3 md:grid-cols-[2fr_1fr_2fr] gap-2 place-content-evenly items-center width-screen h-4 justify-between px-3 py-8 bg-navy text-white">
       <div className="flex justify-start ">
-      
-      <Dropdown pages={pages}/>
+      <div className="flex justify-center">
+
+      <Dropdown pages={pages} />
+      </div>
      
         {/* <p>Menu &#8642;</p> */}
         {/* <p className="z-10">About Us</p>
@@ -34,10 +37,14 @@ export default function Header({data, pages}) {
         <XLink />
         <InstagramLink />
       </div> */}
-      <div className="flex justify-end space-x-2 items-center">
-        {data.map((socialsList) => {
-          return <Socials key={socialsList.id} data={socialsList} />
+      <div className="flex justify-end items-center">
+      <SocialDropdown data={data}/>
+      <div className="hidden md:flex justify-end items-center space-x-4">
+      {data.map((socialsList) => {
+          return <SocialsList key={socialsList.id} data={socialsList} />
         })}
+      </div>
+        
       </div>
     </section>
   );

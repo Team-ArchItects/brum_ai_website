@@ -2,6 +2,7 @@ import Image from 'next/image'
 import Banner from 'app/components/banner/Banner.js'
 import Events from 'app/components/events/Events.js'
 import Instagram from 'app/components/instagram_carousel/Instagram.js'
+import GetInvolved from './components/get_involved_section/GetInvolved'
 import InstaFeed from './components/instagram/InstaFeed'
 
 
@@ -11,6 +12,7 @@ export default function Home() {
       <Banner />
       <Events />
       <Instagram />
+      <GetInvolved />
       <InstaFeed />
     </main>
     
