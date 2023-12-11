@@ -9,10 +9,18 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@emotion/react": "^11.11.1",
+    "@emotion/styled": "^11.11.0",
+    "@mui/material": "^5.14.20",
+    "@mui/styled-engine-sc": "^6.0.0-alpha.7",
+    "create-react-class": "^15.7.0",
     "next": "14.0.3",
     "react": "^18",
     "react-dom": "^18",
-    "sharp": "^0.33.0"
+    "react-helmet": "^6.1.0",
+    "react-youtube": "^10.1.0",
+    "sharp": "^0.33.0",
+    "styled-components": "^6.1.1"
   },
   "devDependencies": {
     "autoprefixer": "^10.0.1",
