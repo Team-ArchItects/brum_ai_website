@@ -30,7 +30,11 @@ export default function EventList() {
 
 return (
   <section>
-    {testEvents && testEvents.map((eventData) => {
+    {testEvents && testEvents.filter(eventData => {
+      const d1 = new Date();
+      const d2 = new Date(eventData.display_until);
+      return d1.getTime() > d2.getTime();
+    }).map((eventData) => {
       return <EventCard key={eventData.id} eventData={eventData} />
     })}
   </section>
