@@ -10,7 +10,7 @@ export default function YouTube() {
     width="560" height="315"
     allow="autoplay;"
     
-    src="https://www.youtube.com/embed/t8eQjr9JGM8"
+    src="https://www.youtube.com/embed/2fg-th5cTpg"
     sx={{
       // auto is the fallback
       
@@ -24,7 +24,7 @@ export default function YouTube() {
     width="560" height="315"
     allow="autoplay;"
     
-    src="https://www.youtube.com/embed/r4manxX5U-0"
+    src="https://www.youtube.com/embed/jtfYKxOjt00"
     sx={{
       // auto is the fallback
       
