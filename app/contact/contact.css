@@ -1,0 +1,55 @@
+h1 {
+  text-align: center;
+  color: white;
+  margin-top: 2em;
+}
+
+form {
+  max-width: 600px;
+  text-align: center;
+  margin: 20px auto;
+  margin-top: 2em;
+}
+
+input,
+textarea {
+  border: 0;
+  outline: 0;
+  padding: 1em;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 1em;
+  resize: none;
+  color: black;
+}
+
+.newInput {
+  margin-bottom: 0.8em;
+}
+.newlabel {
+  margin-top: 2em;
+}
+
+.buttonGap {
+  margin-top: 2em;
+}
+
+#input-submit {
+  color: black;
+  background: #ff822e;
+  cursor: pointer;
+}
+
+#input-submit:hover {
+  box-shadow: 0 1px 1px 1px rgba(0, 0, 0, 0.2);
+  background-color: #00cccc;
+  transition: background-color 0.8s ease;
+}
+
+textarea {
+  height: 126px;
+}
