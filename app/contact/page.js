@@ -1,5 +1,5 @@
 "use client"
-import './contact.css';
+//import './contact.css';
 import emailjs from '@emailjs/browser';
 import React, { useRef } from 'react';
 
@@ -21,17 +21,17 @@ export const ContactUs = () => {
 
   return (
 
-    <>
-    <form ref={form} onSubmit={sendEmail}>
+    <div className=' flex flex-col justify-center items-center'>
+    <form ref={form} onSubmit={sendEmail} className='text-center mt-8 max-w-[600px]'>
       <label className='newlabel'>Name</label>
-      <input type="text" name="user_name" className='newInput'/>
-      <label className='newlabel'>Email</label>
-      <input type="email" name="user_email" className='newInput'/>
+      <input className='border-0 outline-0 p-4 rounded-lg flex flex-col justify-center items-center w-full my-4 resize-none text-black min-w-[300px]' type="text" name="user_name" id='newInput'/>
+      <label className='newlabel mb-2'>Email</label>
+      <input className='border-0 outline-0 p-4 rounded-lg flex flex-col justify-center items-center w-full my-4 resize-none text-black min-w-[300px]' id='newInput' type="email" name="user_email" />
       <label className='newlabel'>Message</label>
-      <textarea name="message" />
-      <input type="submit" value="Send" id="input-submit" className='buttonGap'/>
+      <textarea name="message" className='border-0 outline-0 p-4 rounded-lg flex flex-col justify-center items-center w-full mt-4 resize-none text-black min-w-[300px]' type="text" id='newInput'/>
+      <input type="submit" value="Send" id="input-submit" className='text-black bg-orange-500 cursor-pointer mt-8 px-6 py-2 rounded'/>
     </form>
-    </>
+    </div>
   );
 };
 
