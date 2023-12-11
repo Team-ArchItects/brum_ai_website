@@ -1,38 +1,39 @@
 'use client'
 
 import supabase from '../../utils/supabase'
-import {useEffect, useState } from 'react';
-// import { notFound } from 'next/navigation'
-// import EventList from './components/EventList';
+import {useState, useEffect } from 'react';
+import EventCard from './EventCard';
 
-const idExample = "ff05cd27-ed7a-4861-af3c-34a2c829d12c"
-
-// const supabase = createClient(URL, API);
 
 export default function EventList() {
-
   const [testEvents, setTestEvents] = useState(null);
-
+  function setData (data) {
+    setTestEvents(data)
+  }
   useEffect(() => {
     const fetchEvents = async () => {
       const { data, error } = await supabase.from('testEvents').select('*')/*.eq('id', idExample)*/
-
+  
       if (error) {
         console.error('Error', error.message);
         return;
       }
-
-      setTestEvents(data);
+      if(data) {
+          setData( await data);
+      } 
+      console.log(await data)
   }
   fetchEvents();
-  console.log(testEvents)
-}
-)}
+}, []);
 
-//   const { data: testEvents } = await supabase.from('testEvents').select('*').eq('id', idExample)
-// if (!testEvents) {
-//     return <p>No testEvents found.</p>
-//   }
-// {console.log(testEvents)}
-//   return <pre>{JSON.stringify(testEvents, null, 2)}</pre>
-// }
+
+
+return (
+  <section>
+    {testEvents && testEvents.map((eventData) => {
+      return <EventCard key={eventData.id} eventData={eventData} />
+    })}
+  </section>
+)
+}
+
