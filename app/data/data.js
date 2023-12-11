@@ -40,24 +40,24 @@ export const headerSocials = [
     },
     {
         id: 4,
-        name: "Discord",
-        link: "https://discord.gg/RJSU67kZcJ",
-        imageDark: "/assets/discord_white.svg",
-        alt: "Discord logo linking to the BRUM AI discord group"
+        name: "Youtube",
+        link: "https://www.youtube.com/@brumai5129",
+        imageDark: "/assets/youtube_icon_white.svg",
+        alt: "Youtube logo linking to the BRUM AI Youtube page"
     },
     {
         id: 5,
+        name: "Discord",
+        link: "https://discord.gg/RJSU67kZcJ",
+        imageDark: "/assets/discord_white.svg",
+        alt: "Discord logo linking to the BRUM AI discord group"  
+    },
+    {
+        id: 6,
         name: "Twitter",
         link: "https://x.com/brum_AI",
         imageDark: "/assets/x_white.png",
         alt: "X logo linking to the BRUM AI X page"
-    },
-    {
-        id: 6,
-        name: "Youtube",
-        link: "https://www.youtube.com/@brumai5129",
-        imageDark: "/assets/meetup_white.svg",
-        alt: "Youtube logo linking to the BRUM AI Youtube page"
     },
 ]
 
