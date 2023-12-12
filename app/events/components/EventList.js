@@ -31,8 +31,6 @@ function futureOrPast (tense) {
   setTimeFrame(tense);
 } 
 
-const lessOrGreater = timeFrame === "future" ? true : false;
-
 
 return (
   <section>
@@ -40,10 +38,10 @@ return (
     {testEvents && testEvents.filter(eventData => {
       const d1 = new Date();
       const d2 = new Date(eventData.display_until);
-      const decider = lessOrGreater ? (d1.getTime() < d2.getTime()) : (d1.getTime() > d2.getTime());
+      const decider = timeFrame === "future" ? (d1.getTime() < d2.getTime()) : (d1.getTime() > d2.getTime());
       return decider;
     }).map((eventData) => {
-      return <EventCard key={eventData.id} eventData={eventData} />
+      return <EventCard key={eventData.id} eventData={eventData} timeFrame={timeFrame}/>
     })}
   </section>
 )
