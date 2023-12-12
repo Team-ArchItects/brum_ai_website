@@ -35,8 +35,9 @@ export default function Footer({data}) {
         })}
         <p className="w-full p-3">BRUM AI is supported by these amazing sponsors</p>
         </div>
-        <div className="flex justify-end z-10 w-10/12 items-end self-center pb-1">
-          <Button text={"Contact Us"} location={"/contact"}/>
+        <div className="grid grid-cols-2 z-10 w-10/12 items-end self-center pb-1">
+          <div><Button text={"Buy us a coffee"} location={"https://www.buymeacoffee.com/brumai"} className="self-start"/></div>
+          <div className="justify-self-end"><Button text={"Contact Us"} location={"/contact"} /></div>
         </div>
         <div className="flex flex-wrap flex-col items-center z-10">
           <div className="p-px bg-white dark:bg-black w-10/12 h-0 "></div>

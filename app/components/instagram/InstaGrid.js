@@ -2,6 +2,7 @@ import Skeleton from "@mui/material/Skeleton";
 import { InstaItem } from './InstaFeed';
 import jsonData from './instagramcontent.json'
 
+
 // interface InstaGridProps = { // !TYPESCRIPT
 //     items: [], // An array of InstaItem objects
 //   };
