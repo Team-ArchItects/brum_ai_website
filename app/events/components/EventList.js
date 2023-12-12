@@ -33,7 +33,7 @@ function futureOrPast (tense) {
 
 
 return (
-  <section className="w-full flex flex-col content-center">
+  <section className="w-full flex flex-col items-center">
     <TenseButtons futureOrPast={futureOrPast} />
     {testEvents && testEvents.filter(eventData => {
       const d1 = new Date();
