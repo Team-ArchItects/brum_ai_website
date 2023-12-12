@@ -49,22 +49,28 @@ export default function EventSection() {
     useEffect(() => {
         const fetchEvents = async () => {
           const { data, error } = await supabase
-          .from('testEvents')
-          .select('*')
-        //   .where ("'display_until' > current_date")
-        //   .order('display_until asc')
-          .limit(2)
+            .from('testEvents')
+            .select('*');
       
           if (error) {
-            console.error('Error', error.message);
+            console.error('Error:', error.message);
             return;
           }
-          if(data) {
-              setTestEvents(data);
-          } 
-      }
-      fetchEvents();
-    }, []);
+      
+          if (data) {
+            console.log('Data:', data); // Log the data variable to check the values
+      
+            // Apply filtering and ordering
+            const filteredData = data.filter(event => new Date(event.display_until) > new Date());
+            const sortedData = filteredData.sort((a, b) => new Date(a.display_until) - new Date(b.display_until));
+            const limitedData = sortedData.slice(0, 2);
+      
+            setTestEvents(limitedData);
+          }
+        };
+      
+        fetchEvents();
+      }, []);
 
 return (
     <section>
