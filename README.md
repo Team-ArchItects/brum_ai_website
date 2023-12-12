@@ -142,6 +142,8 @@ Get updates on Bootstrap's development and chat with the project maintainers and
 
 ## Buy_Us_A_Coffee
 
-<img src="public/assets/buysusacoffee.jpg" href="https://www.buymeacoffee.com/brumai" alt="" width="150px">
+<a href="https://www.buymeacoffee.com/brumai">
+<img src="public/assets/buysusacoffee.jpg" href= alt="" width="150px">
+</a>
 
 <div></div>
