@@ -17,8 +17,8 @@ export default function Home() {
       {/* <div className="mt-10">
         <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:share:7119108494506565632"></iframe>
       </div> */}
-      {/* <YouTube /> */}
-      <InstaFeed />
+      <YouTube />
+      {/* <InstaFeed /> */}
       {/* <Tweet /> */}
       <GetInvolved />
     </main>
