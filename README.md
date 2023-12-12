@@ -9,7 +9,7 @@
 <p align="center">
   A sleek, intuitive, and powerful front-end framework for Birmingham's premiere AI events organisation.
   <br>
-  <a href="https://getbootstrap.com/docs/5.3/"><strong>Explore BrumAI docs »</strong></a>
+  <a href="https://team-architects.github.io/"><strong>Explore BrumAI docs »</strong></a>
   <br>
   <br>
   <a href="https://brum-ai-test.netlify.app/">View the website</a>
