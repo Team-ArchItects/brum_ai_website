@@ -9,7 +9,7 @@
 <p align="center">
   A sleek, intuitive, and powerful front-end framework for Birmingham's premiere AI events organisation.
   <br>
-  <a href="https://getbootstrap.com/docs/5.3/"><strong>Explore BrumAI docs »</strong></a>
+  <a href="https://team-architects.github.io/"><strong>Explore BrumAI docs »</strong></a>
   <br>
   <br>
   <a href="https://brum-ai-test.netlify.app/">View the website</a>
@@ -85,11 +85,11 @@ Get updates on Bootstrap's development and chat with the project maintainers and
 - Join our events, book on [Meetup](https://meetup.com/brum-ai).
 - Follow [@brum_AI on X](https://x.com/brum_AI).
 - Follow [BrumAI on LinkedIn](https://www.linkedin.com/company/brumai/).
-- Join the [Slack channel](brumai.slack.com)
-- Watch our [YouTube videos](https://www.youtube.com/@brumai5129)
-- Join the [Discord](https://tr.ee/xidkxXUO2K)
-- Follow us on [Instagram](https://www.instagram.com/brum_ai_/)
-- Follow us on [Facebook](https://www.instagram.com/brum_ai_/)
+- Join the [Slack channel](brumai.slack.com).
+- Watch our [YouTube videos](https://www.youtube.com/@brumai5129).
+- Join the [Discord](https://tr.ee/xidkxXUO2K).
+- Follow us on [Instagram](https://www.instagram.com/brum_ai_/).
+- Follow us on [Facebook](https://www.instagram.com/brum_ai_/).
 
 
 ## Creators
@@ -142,6 +142,8 @@ Get updates on Bootstrap's development and chat with the project maintainers and
 
 ## Buy_Us_A_Coffee
 
-<img src="public/assets/buysusacoffee.jpg" href="https://www.buymeacoffee.com/brumai" alt="" width="150px">
+<a href="https://www.buymeacoffee.com/brumai">
+<img src="public/assets/buysusacoffee.jpg" href= alt="" width="150px">
+</a>
 
 <div></div>
