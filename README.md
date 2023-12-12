@@ -79,8 +79,6 @@ Please see the data file located at 'app/data/data.js' to make ammendments to th
 
 ## Community
 
-Get updates on Bootstrap's development and chat with the project maintainers and community members.
-
 - See our [LinkTree](http://linktr.ee/brumai).
 - Join our events, book on [Meetup](https://meetup.com/brum-ai).
 - Follow [@brum_AI on X](https://x.com/brum_AI).
