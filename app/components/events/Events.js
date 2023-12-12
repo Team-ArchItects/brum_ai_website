@@ -1,3 +1,4 @@
+/*
 const dummyData = [
     {
         "name": "University Event",
@@ -34,3 +35,51 @@ const Events = () => {
   }
   
   export default Events;
+  */
+
+'use client'
+
+import supabase from '../../utils/supabase'
+import {useState, useEffect } from 'react';
+import NextEventsMap from './NextEventsMap';
+
+export default function EventSection() {
+    const [testEvents, setTestEvents] = useState(null);
+
+    useEffect(() => {
+        const fetchEvents = async () => {
+          const { data, error } = await supabase
+            .from('testEvents')
+            .select('*');
+      
+          if (error) {
+            console.error('Error:', error.message);
+            return;
+          }
+      
+          if (data) {
+            console.log('Data:', data); // Log the data variable to check the values
+      
+            // Apply filtering and ordering
+            const filteredData = data.filter(event => new Date(event.display_until) > new Date());
+            const sortedData = filteredData.sort((a, b) => new Date(a.display_until) - new Date(b.display_until));
+            const limitedData = sortedData.slice(0, 2);
+      
+            setTestEvents(limitedData);
+          }
+        };
+      
+        fetchEvents();
+      }, []);
+
+return (
+    <section>
+    {testEvents && testEvents.map?.((nextEvents) => (
+  <NextEventsMap key={nextEvents.id} data={nextEvents} />
+))}
+    </section>
+    // <div>
+    //     <p>{testEvents?.[1]?.event_description}</p>
+    // </div>
+)
+}
