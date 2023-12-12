@@ -4,7 +4,7 @@ import Link from "next/link";
 const Button = ({ text, location }) => {
   return (
     <Link href={`${location}`}>
-      <button className="rounded-full flex flex-wrap p-2 border-4 border-citrus">
+      <button className="rounded-full flex flex-wrap p-2 border-4 border-citrus min-w-[150px]">
         {`${text}`}
         <Image
           src="/assets/arrow.png"
