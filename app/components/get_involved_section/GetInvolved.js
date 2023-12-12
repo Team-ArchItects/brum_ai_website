@@ -5,8 +5,8 @@ export default function GetInvolved () {
                 <h3 className="text-6xl text-center w-96 bg-clip-text text-transparent bg-gradient-to-r from-magenta via-citrus to-aqua">Get Involved.</h3>
                 <p className="font-bold text-black self-start py-4">We&apos;re looking for volunteers.</p>
                 <p className="text-black">BrumAI is run entirely by volunteers for free. We think Birmingham can become the UK city of choice to start an AI startup and we think that&apos;s well worth volunteering for. If you&apos;d like to muck in and help make a big impact, get in touch!</p>
-                <p className="font-bold text-black self-start py-4">Want to sponser us?</p>
-                <p className="text-black bg-white">BrumAI depends on our generous sponsors. If you are interested in sponsering BrumAI in any form, please feel free to contact us any time!</p>
+                <p className="font-bold text-black self-start py-4">Want to sponsor us?</p>
+                <p className="text-black bg-white">BrumAI depends on our generous sponsors. If you are interested in sponsoring BrumAI in any form, please feel free to contact us any time!</p>
             </div>
         </section>
     )
