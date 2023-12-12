@@ -1,7 +1,7 @@
 export default function GetInvolved () {
     return (
-        <section className="bg-[url('/assets/getinvolvedgraphic_white.png')] bg-center bg-cover bg-no-repeat w-full min-w-[400px] min-h-[400px] flex justify-center items-center">
-            <div className="w-[70%] flex flex-col items-center p-2 min-h-[333px]">
+        <section className="bg-[url('/assets/getinvolvedgraphic_white.png')] bg-center bg-contain bg-no-repeat w-full min-w-[400px] min-h-[400px] flex justify-center items-center py-12 lg:py-4 xl:py-2">
+            <div className="w-[70%] flex flex-col items-center p-1 min-h-[333px]">
                 <h3 className="text-6xl text-center w-96 bg-clip-text text-transparent bg-gradient-to-r from-magenta via-citrus to-aqua">Get Involved.</h3>
                 <p className="font-bold text-black self-start py-4">We&apos;re looking for volunteers.</p>
                 <p className="text-black">BrumAI is run entirely by volunteers for free. We think Birmingham can become the UK city of choice to start an AI startup and we think that&apos;s well worth volunteering for. If you&apos;d like to muck in and help make a big impact, get in touch!</p>
