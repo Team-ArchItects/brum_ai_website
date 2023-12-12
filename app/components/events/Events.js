@@ -51,9 +51,9 @@ export default function EventSection() {
           const { data, error } = await supabase
           .from('testEvents')
           .select('*')
-          .where('display_until > current_date')
-          .order('display_until asc')
-          .limit('2')
+        //   .where ("'display_until' > current_date")
+        //   .order('display_until asc')
+          .limit(2)
       
           if (error) {
             console.error('Error', error.message);
@@ -67,14 +67,13 @@ export default function EventSection() {
     }, []);
 
 return (
-    // <section>
-    // {testEvents.map((nextEvents) => {
-    //     <NextEventsMap key={nextEvents.id} data={nextEvents} />
-    // }
-    // )}
-    // </section>
-    <div>
-        <p>{testEvents[0].event_description}</p>
-    </div>
+    <section>
+    {testEvents && testEvents.map?.((nextEvents) => (
+  <NextEventsMap key={nextEvents.id} data={nextEvents} />
+))}
+    </section>
+    // <div>
+    //     <p>{testEvents?.[1]?.event_description}</p>
+    // </div>
 )
 }
