@@ -85,11 +85,11 @@ Get updates on Bootstrap's development and chat with the project maintainers and
 - Join our events, book on [Meetup](https://meetup.com/brum-ai).
 - Follow [@brum_AI on X](https://x.com/brum_AI).
 - Follow [BrumAI on LinkedIn](https://www.linkedin.com/company/brumai/).
-- Join the [Slack channel](brumai.slack.com)
-- Watch our [YouTube videos](https://www.youtube.com/@brumai5129)
-- Join the [Discord](https://tr.ee/xidkxXUO2K)
-- Follow us on [Instagram](https://www.instagram.com/brum_ai_/)
-- Follow us on [Facebook](https://www.instagram.com/brum_ai_/)
+- Join the [Slack channel](brumai.slack.com).
+- Watch our [YouTube videos](https://www.youtube.com/@brumai5129).
+- Join the [Discord](https://tr.ee/xidkxXUO2K).
+- Follow us on [Instagram](https://www.instagram.com/brum_ai_/).
+- Follow us on [Facebook](https://www.instagram.com/brum_ai_/).
 
 
 ## Creators
