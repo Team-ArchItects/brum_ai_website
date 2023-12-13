@@ -17,7 +17,7 @@ export default function Footer({ data }) {
             BRUM AI is supported by these amazing sponsors
           </p>
         </div>
-        <div className="grid grid-cols-2 z-10 w-10/12 items-end self-center pb-4">
+        <div className="flex flex-col sm:grid sm:grid-cols-2 z-10 w-10/12 items-center sm:items-end self-center pb-4">
           <div>
             <Button
               text={"Buy us a coffee"}
@@ -25,7 +25,7 @@ export default function Footer({ data }) {
               className="self-start"
             />
           </div>
-          <div className="justify-self-end">
+          <div className="justify-self-end mt-3">
             <Button text={"Contact Us"} location={"/contact"} />
           </div>
         </div>
