@@ -13,7 +13,7 @@ export default function Home() {
     <main className="flex min-h-screen flex-col items-center justify-between px-24 ">
       <Banner />
       <EventSection />
-      <Instagram />
+      
       {/* <div className="mt-10">
         <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:share:7119108494506565632"></iframe>
       </div> */}
