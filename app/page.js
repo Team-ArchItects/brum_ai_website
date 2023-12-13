@@ -9,7 +9,7 @@ import EmbedInstagram from "./components/instagram/EmbedInstagram";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between px-24">
+    <main className="flex min-h-screen flex-col items-center justify-between px-24 ">
       <Banner />
       <EventSection />
       {/* <div className="mt-10">

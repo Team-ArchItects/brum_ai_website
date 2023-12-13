@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
+/* :root {
   --foreground-rgb: 0, 0, 0;
   --text-color-rgb: 255, 255, 255;
   --reverse-bg-rgb: 0, 0, 0;
@@ -18,24 +18,24 @@
     --background-start-rgb: 0, 0, 0;
     --background-end-rgb: 0, 0, 0;
   }
-}
+} */
 
 body {
-  color: rgb(var(--foreground-rgb));
+  /* color: rgb(var(--foreground-rgb));
   background: linear-gradient(
       to bottom,
       transparent,
       rgb(var(--background-end-rgb))
     )
-    rgb(var(--background-start-rgb));
+    rgb(var(--background-start-rgb)); */
   overflow-x: hidden;
 }
 
-footer,
+/* footer,
 button {
   color: rgb(var(--text-color-rgb));
   background: rgb(var(--reverse-bg-rgb));
-}
+} */
 
 .video-responsive {
   overflow: hidden;
