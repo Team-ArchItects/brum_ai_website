@@ -9,6 +9,7 @@
 <p align="center">
   A sleek, intuitive, and powerful front-end framework for Birmingham's premiere AI events organisation.
   <br>
+  <br>
   <a href="https://team-architects.github.io/"><strong>Explore BrumAI docs »</strong></a>
   <br>
   <br>
@@ -54,7 +55,7 @@ Our default branches for development are Branch A2, Branch B and Branch C, allow
 ![LinkedIn](https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)
 ![YouTube](https://img.shields.io/badge/YouTube-%23FF0000.svg?style=for-the-badge&logo=YouTube&logoColor=white)
 ![Twitter](https://img.shields.io/badge/Twitter-%231DA1F2.svg?style=for-the-badge&logo=Twitter&logoColor=white)
-
+![Supabase](https://img.shields.io/badge/Supabase-3ECF8E?style=for-the-badge&logo=supabase&logoColor=white)
 
 
 
