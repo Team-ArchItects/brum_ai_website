@@ -10,10 +10,10 @@ export default function NextEventsMap({ data }) {
   return (
     <a href={`${data.meetup_link}`}>
       <article
-      style={{ backgroundImage: `url(${data.image_url})` }}
+      style={{ backgroundImage: `linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url(${data.image_url})` } }
         className={`border-2 border-citrus bg-cover bg-center rounded-2xl my-5 p-5`}
       >
-        <h1 className="drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)] font-bold text-2xl">{`${data.event_name}`}</h1>
+        <h1 className="drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,1)] font-bold text-2xl">{`${data.event_name}`}</h1>
         {/* <Image
           src={data.image_url}
           alt="Event photo"
@@ -22,10 +22,10 @@ export default function NextEventsMap({ data }) {
           height="300"
           className="justify-self-center align-self-center 2xl:min-w-[400px]"
         /> */}
-        <p className="drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">{`${data.event_description}`}</p>
+        <p className="drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,1)]">{`${data.event_description}`}</p>
         {/* <p>{`${""}`}</p> */}
-        <p className="drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">{`${date.toString().substring(4, 15)}`}</p>
-        <p className="drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">{`${data.event_time.substring(0, 5)} - ${data.end_time.substring(
+        <p className="drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,1)]">{`${date.toString().substring(4, 15)}`}</p>
+        <p className="drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,1)]">{`${data.event_time.substring(0, 5)} - ${data.end_time.substring(
           0,
           5
         )}`}</p>
