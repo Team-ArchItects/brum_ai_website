@@ -9,5 +9,6 @@ export default function GetInvolved () {
                 <p className="text-black bg-white">BrumAI depends on our generous sponsors. If you are interested in sponsoring BrumAI in any form, please feel free to contact us any time!</p>
             </div>
         </section>
+
     )
 }
