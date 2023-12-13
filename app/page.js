@@ -10,7 +10,7 @@ import YouTube from "./components/YouTube";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between px-24">
+    <main className="flex min-h-screen flex-col items-center justify-between px-24 ">
       <Banner />
       <EventSection />
       <Instagram />
