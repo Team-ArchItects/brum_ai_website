@@ -3,8 +3,10 @@ export default function EmbedInstagram() {
     return (
 
 <>
-<script src="https://s.electricblaze.com/widget.js" defer></script>
-<div class="electricblaze-id-2UhxB5Q"></div>
+<figure data-behold-id="zQoIu27eJW6nGt7sGlRg"></figure>
+<Script src="https://w.behold.so/widget.js" type="module"></Script>
+<br></br>
+<br></br>
 </>
 
     );
