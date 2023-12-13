@@ -13,16 +13,17 @@ export default function EventList() {
 
   useEffect(() => {
     const fetchEvents = async () => {
-      const { data, error } = await supabase.from('testEvents').select('*')/*.eq('id', idExample)*/
+      const { data, error } = await supabase.from('testEvents').select('*').order('event_date', {ascending: true});
+      /*.eq('id', idExample)*/
   
       if (error) {
         console.error('Error', error.message);
         return;
       }
       if(data) {
-          setTestEvents( await data);
+          setTestEvents(data);
       } 
-      console.log(await data)
+      console.log(data);
   }
   fetchEvents();
 }, []);
