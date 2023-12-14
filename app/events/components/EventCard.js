@@ -11,11 +11,11 @@ export default function EventCard({ eventData, timeFrame }) {
         {/* {timeFrame === "past" && <Image src="https://images.unsplash.com/photo-1545350089-47b3d117a92c?q=80&w=1933&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Event photo" width="150" height="150" />} */}
         <div className="flex flex-col 2xl:grid 2xl:grid-cols-[1fr_2fr] 2xl:grid-rows-none gap-6">
           <Image
-            src="/assets/placeholder_event_image.jpg"
+            src={eventData.image_url}
             alt="Placeholder photo"
             width="500"
             height="300"
-            className="justify-self-center self-center 2xl:min-w-[400px]"
+            className="justify-self-center self-center 2xl:min-w-[400px] max-h-[400px]"
           />
           <div className="flex flex-col justify-between py-3">
             <p><span className="font-semibold underline">Date</span>: {`${date.toString().substring(4, 15)}`}</p>

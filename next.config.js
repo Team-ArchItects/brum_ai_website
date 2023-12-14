@@ -1,15 +1,22 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-//     images: {
-//         remotePatterns: [
-//             {
-//                 protocol: 'https',
-//                 hostname: 'images.unsplash.com',
-//                 port: '',
-//                 pathname: '',
-//             }
-//         ]
-//     }
+    reactStrictMode: true,
+    images: {
+        remotePatterns: [
+            {
+                protocol: "https",
+                hostname: "brumai.github.io"
+            },
+            {
+                protocol: "https",
+                hostname: "pbs.twimg.com"
+            },
+            {
+                protocol: "https",
+                hostname: "secure.meetupstatic.com"
+            }
+        ]
+    }
 }
 
 module.exports = nextConfig
