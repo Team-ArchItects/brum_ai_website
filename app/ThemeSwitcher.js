@@ -24,7 +24,7 @@ export default function ThemeSwitcher() {
           alt="moon image"
           width="48"
           height="48"
-          className={`w-[40px] h-[30px] cursor-pointer ${
+          className={`w-[40px] h-[40px] cursor-pointer ${
             theme !== "dark" && "grayscale"
           }`}
         />

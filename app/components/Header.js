@@ -12,7 +12,7 @@ import ThemeSwitcher from "../ThemeSwitcher";
 
 export default function Header({ data, pages }) {
   return (
-    <section className="min-w-[360px] grid grid-cols-3 md:grid-cols-[5fr_1fr_5fr] gap-2 place-content-evenly items-center width-screen h-4 justify-between px-3 py-8 bg-navy text-white">
+    <section className="min-w-[360px] grid grid-cols-3 md:grid-cols-[5fr_1fr_5fr] gap-x-2 place-content-evenly items-center width-screen h-4 justify-between px-3 py-8 bg-navy text-white">
       <div className="flex justify-start ">
         <div className="flex justify-center">
           <Dropdown pages={pages} />
