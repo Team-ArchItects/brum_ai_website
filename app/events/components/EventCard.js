@@ -13,6 +13,7 @@ export default function EventCard({ eventData, timeFrame }) {
           <Image
             src={eventData.image_url}
             alt="Placeholder photo"
+            unoptimized
             width="500"
             height="300"
             className="justify-self-center self-center 2xl:min-w-[400px] max-h-[400px]"
