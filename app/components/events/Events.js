@@ -3,13 +3,10 @@
 import supabase from "../../utils/supabase";
 import { useState, useEffect } from "react";
 import NextEventsMap from "./NextEventsMap";
+import Button from "../banner/Button";
 
 const todayDate = new Date();
 const newDate = `${todayDate.getFullYear()}-${todayDate.getMonth()}-${todayDate.getDate()}`;
-
-console.log(todayDate);
-
-console.log(todayDate);
 
 export default function EventSection() {
   const [testEvents, setTestEvents] = useState(null);
@@ -45,7 +42,7 @@ export default function EventSection() {
 
   return (
     <section className="w-9/12 2xl:w-8/12 text-center text-3xl pt-2">
-      <h1 className="mt-8 text-5xl text-center p-4 bg-clip-text text-transparent bg-gradient-to-r from-magenta via-citrus to-aqua">
+      <h1 className="mt-8 text-4xl md:text-5xl text-center p-4 bg-clip-text text-transparent bg-gradient-to-r from-magenta via-citrus to-aqua">
         Upcoming Events
       </h1>
       <section className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-x-4 justify-center px-2 mb-9">
@@ -54,6 +51,7 @@ export default function EventSection() {
             <NextEventsMap key={nextEvents.id} data={nextEvents} />
           ))}
       </section>
+     <Button text={"More Events"} location={"/events"} />
     </section>
     // <div>
     //     <p>{testEvents?.[1]?.event_description}</p>
