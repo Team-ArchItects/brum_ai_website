@@ -21,7 +21,7 @@ export const ContactUs = () => {
 
   return (
     <section className="flex flex-col justify-center items-center w-full" >
-      <h1 className='mt-7 text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-magenta via-citrus to-aqua w-80'>Contact Us Form</h1>
+      <h1 className='mt-7 text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-magenta via-citrus to-aqua w-80 text-center'>Contact Us Form</h1>
     <div className=' flex flex-col justify-center items-center w-full'>
     <form ref={form} onSubmit={sendEmail} className='text-center mt-8 w-10/12 max-w-[600px]'>
       <label className='newlabel'>Name</label>
