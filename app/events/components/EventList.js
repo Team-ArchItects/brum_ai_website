@@ -4,10 +4,13 @@ import supabase from "../../utils/supabase";
 import { useState, useEffect } from "react";
 import EventCard from "./EventCard";
 import TenseButtons from "./TenseButtons";
+import MoreLessButtons from "./MoreLessButtons";
 
 export default function EventList() {
   const [testEvents, setTestEvents] = useState(null);
   const [timeFrame, setTimeFrame] = useState("future");
+  const [eventsToShow, setEventsToShow] = useState(5);
+
 
   useEffect(() => {
     const fetchEvents = async () => {
@@ -73,13 +76,22 @@ export default function EventList() {
           });
       }
     }
-    return eventCardArray;
+    const visableEvents = eventCardArray.slice(0, eventsToShow);
+    return visableEvents;
+  }
+
+  const showMoreEvents = () => {
+    setEventsToShow(eventsToShow + 5);
+  };
+  const showLessEvents = () => {
+    eventsToShow > 5 && setEventsToShow(eventsToShow - 5);
   }
 
   return (
     <section className="w-full flex flex-col items-center">
       <TenseButtons futureOrPast={futureOrPast} />
       {dataPicker()}
+      <MoreLessButtons showLessEvents={showLessEvents} showMoreEvents={showMoreEvents} />
     </section>
   );
 }

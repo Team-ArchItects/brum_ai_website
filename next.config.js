@@ -14,21 +14,14 @@ const nextConfig = {
             {
                 protocol: "https",
                 hostname: "secure.meetupstatic.com"
-            }
+            },
+            {
+                protocol: "https",
+                hostname: "images.unsplash.com"
+            },
         ]
     }
 }
 
-module.exports = nextConfig
-// module.exports = {
-//     images: {
-//         remotePatterns: [
-//             {
-//                 protocol: 'https',
-//                 hostname: 'images.unsplash.com',
-//                 port: '',
-//                 pathname: '',
-//             }
-//         ]
-//     }
-// }
+module.exports = nextConfig;
+
