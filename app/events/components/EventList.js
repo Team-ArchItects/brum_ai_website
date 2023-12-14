@@ -32,19 +32,43 @@ function futureOrPast (tense) {
   setTimeFrame(tense);
 } 
 
+function dataPicker (){
+  if (testEvents){
+    if(timeFrame === "future"){
+      testEvents.filter(eventData => {
+        const d1 = new Date();
+        const d2 = new Date(eventData.event_date);
+        const decider = d1.getTime() < d2.getTime();
+        return decider;
+      }).map(eventData => {
+        return <EventCard key={eventData.id} eventData={eventData} timeFrame={timeFrame}/>
+      })
+      } else if(timeFrame === "past"){
+        testEvents.filter(eventData => {
+          const d1 = new Date();
+          const d2 = new Date(eventData.event_date);
+          const decider = d1.getTime() > d2.getTime();
+          return decider;
+        }).toReversed().map(eventData => {
+          return <EventCard key={eventData.id} eventData={eventData} timeFrame={timeFrame}/>
+        })
+      }
+    }
+  }
+
 
 return (
   <section className="w-full flex flex-col items-center">
     <TenseButtons futureOrPast={futureOrPast} />
-    {testEvents && testEvents.filter(eventData => {
+    {/* {testEvents && testEvents.filter(eventData => {
       const d1 = new Date();
       const d2 = new Date(eventData.display_until);
       const decider = timeFrame === "future" ? (d1.getTime() < d2.getTime()) : (d1.getTime() > d2.getTime());
       return decider;
     }).map((eventData) => {
       return <EventCard key={eventData.id} eventData={eventData} timeFrame={timeFrame}/>
-    })}
+    })} */}
+    {dataPicker()}
   </section>
 )
 }
-
