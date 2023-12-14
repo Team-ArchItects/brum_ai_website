@@ -24,18 +24,18 @@ export default function ThemeSwitcher() {
           alt="moon image"
           width="48"
           height="48"
-          className={`w-[30px] h-[30px] cursor-pointer ${
+          className={`w-[40px] h-[30px] cursor-pointer ${
             theme !== "dark" && "grayscale"
           }`}
         />
       </button>
       <button onClick={() => setTheme("light")}>
         <Image
-          src="/assets/sun.png"
+          src="/assets/sun.svg"
           alt="sun image"
           width="48"
           height="48"
-          className={`w-[30px] h-[30px] cursor-pointer ${
+          className={`w-[40px] h-[40px] cursor-pointer ${
             theme === "dark" && "grayscale"
           }`}
         />
