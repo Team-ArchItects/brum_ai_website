@@ -2,7 +2,7 @@
 
 import Script from "next/script";
 
-export default function EmbedTwitter() {
+export default function EmbedX() {
   return (
     <>
       <div class="sk-ww-twitter-feed" data-embed-id="241650"></div>

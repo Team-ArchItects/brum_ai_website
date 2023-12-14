@@ -5,7 +5,7 @@ import GetInvolved from "./components/get_involved_section/GetInvolved";
 import Tweet from "./components/Tweet";
 import YouTube from "./components/YouTube";
 import EmbedInstagram from "./components/instagram/EmbedInstagram";
-import EmbedTwitter from "./components/EmbedTwitter";
+import EmbedX from "./components/EmbedX";
 import EmbedLinkedIn from "./components/EmbedLinkedIn";
 import { homepageData } from "./data/data";
 
@@ -20,7 +20,7 @@ export default function Home() {
       <YouTube />
       <EmbedInstagram />
       <EmbedLinkedIn />
-      <EmbedTwitter />
+      <EmbedX />
       {/* <Tweet /> */}
       <GetInvolved data={homepageData} />
     </main>
