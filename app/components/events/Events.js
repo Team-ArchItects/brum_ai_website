@@ -45,9 +45,9 @@ export default function EventSection() {
 
   return (
     <section className="text-citrus text-center text-3xl py-2">
-      <h1 className="mt-8 text-6xl text-center p-4 bg-clip-text text-transparent bg-gradient-to-r from-magenta via-citrus to-aqua">
+      {/* <h1 className="mt-8 text-6xl text-center p-4 bg-clip-text text-transparent bg-gradient-to-r from-magenta via-citrus to-aqua">
         Upcoming Events
-      </h1>
+      </h1> */}
       <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4 place-content-evenly">
         {testEvents &&
           testEvents.map?.((nextEvents) => (
