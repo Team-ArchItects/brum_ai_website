@@ -19,8 +19,8 @@ export default function Home() {
       </div> */}
       <YouTube />
       <EmbedInstagram />
-      <EmbedTwitter />
       <EmbedLinkedIn />
+      <EmbedTwitter />
       {/* <Tweet /> */}
       <GetInvolved />
     </main>

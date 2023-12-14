@@ -9,7 +9,6 @@ export default function EmbedTwitter() {
         defer
       ></Script>
       <br></br>
-      <br></br>
     </>
   );
 }

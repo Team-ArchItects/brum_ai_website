@@ -8,6 +8,7 @@ export default function EmbedTwitter() {
         async
         defer
       ></Script>
+      <br></br>
     </>
   );
 }
