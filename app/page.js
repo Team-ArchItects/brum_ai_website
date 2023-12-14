@@ -7,11 +7,11 @@ import YouTube from "./components/YouTube";
 import EmbedInstagram from "./components/instagram/EmbedInstagram";
 import EmbedTwitter from "./components/EmbedTwitter";
 import EmbedLinkedIn from "./components/EmbedLinkedIn";
-
+import { homepageData } from "./data/data";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between px-24 ">
+    <main className="flex min-h-screen flex-col items-center justify-between md:px-24">
       <Banner />
       <EventSection />
       {/* <div className="mt-10">
@@ -22,8 +22,7 @@ export default function Home() {
       <EmbedLinkedIn />
       <EmbedTwitter />
       {/* <Tweet /> */}
-      <GetInvolved />
+      <GetInvolved data={homepageData} />
     </main>
   );
 }
-
