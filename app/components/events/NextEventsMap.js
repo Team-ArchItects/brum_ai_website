@@ -1,8 +1,3 @@
-import Image from "next/image";
-import Link from "next/link";
-
-//
-
 export default function NextEventsMap({ data }) {
   const date = new Date(data.event_date);
 
