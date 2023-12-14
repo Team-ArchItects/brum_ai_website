@@ -20,8 +20,9 @@ export const ContactUs = () => {
   };
 
   return (
-
-    <div className=' flex flex-col justify-center items-center '>
+    <section className="flex flex-col justify-center items-center w-full" >
+      <h1 className='mt-7 text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-magenta via-citrus to-aqua w-80'>Contact Us Form</h1>
+    <div className=' flex flex-col justify-center items-center w-full'>
     <form ref={form} onSubmit={sendEmail} className='text-center mt-8 w-10/12 max-w-[600px]'>
       <label className='newlabel'>Name</label>
       <input className='border-0 outline-0 p-4 rounded-lg flex flex-col justify-center items-center w-full my-4 resize-none bg-zinc-700 text-white min-w-[300px]' type="text" name="user_name" id='newInput'/>
@@ -32,6 +33,7 @@ export const ContactUs = () => {
       <input type="submit" value="Send" id="input-submit" className='text-black bg-orange-500 cursor-pointer mt-8 px-6 py-2 rounded'/>
     </form>
     </div>
+    </section>
   );
 };
 
