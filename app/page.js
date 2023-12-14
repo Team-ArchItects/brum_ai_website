@@ -7,7 +7,7 @@ import YouTube from "./components/YouTube";
 import EmbedInstagram from "./components/instagram/EmbedInstagram";
 import EmbedTwitter from "./components/EmbedTwitter";
 import EmbedLinkedIn from "./components/EmbedLinkedIn";
-
+import { homepageData } from "./data/data";
 
 export default function Home() {
   return (
@@ -22,8 +22,7 @@ export default function Home() {
       <EmbedLinkedIn />
       <EmbedTwitter />
       {/* <Tweet /> */}
-      <GetInvolved />
+      <GetInvolved data={homepageData} />
     </main>
   );
 }
-
