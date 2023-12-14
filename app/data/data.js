@@ -111,3 +111,17 @@ export const footerSponsors = [
     url: "https://medium.com/google-developer-experts",
   },
 ];
+
+export const homepageData = {
+  aboutBanner:
+    "BrumAI is the home of AI in the Midlands. We are a dynamic community dedicated to fostering innovation, collaboration, and learning in the field of Artificial Intelligence. Our mission is to unite individuals passionate about AI, creating a platform where ideas are exchanged, knowledge is enriched, and connections are formed.",
+  volunteerTitle: "VOLUNTEER WITH BRUM AI",
+  volunteerCopy:
+    "BRUM.AI is a non-profit run entirely by volunteers. Our aim is to make the Midlands the hub for AI in the UK. Why the Midlands? The Industrial Revolution was forged here, as were the ideals of the Land of the Free, the theory of evolution and Shakespeare. The Midlands has the legacy, energy, intelligence and diversity to fuel the Fourth Industrial Revolution. BRUM.AI aims to be at the centre of this growth. Be part of our community-driven group managed by those at the cutting edge of AI. From helping to promote an event to initiatives on reaching new goals, get involved and play your part. Contact Us now!",
+  sponsorCopy:
+    "Help us make the Midlands the home of AI in the UK. Interested to hear about our sponsorship packages? Can you host our meetups? Contact us now!",
+};
+
+// export const contactPageData = {
+
+// }
