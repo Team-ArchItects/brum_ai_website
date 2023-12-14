@@ -77,6 +77,7 @@ export default function EventList() {
       }
     }
     const visableEvents = eventCardArray.slice(0, eventsToShow);
+    // visableEvents.length < eventsToShow && setEventsToShow(Math.ceil(visableEvents.length / 5) * 5)
     return visableEvents;
   }
 
@@ -84,14 +85,14 @@ export default function EventList() {
     setEventsToShow(eventsToShow + 5);
   };
   const showLessEvents = () => {
-    eventsToShow > 5 && setEventsToShow(eventsToShow - 5);
+    setEventsToShow(eventsToShow - 5);
   }
 
   return (
     <section className="w-full flex flex-col items-center">
       <TenseButtons futureOrPast={futureOrPast} />
       {dataPicker()}
-      <MoreLessButtons showLessEvents={showLessEvents} showMoreEvents={showMoreEvents} />
+      <MoreLessButtons showLessEvents={showLessEvents} showMoreEvents={showMoreEvents} noMore={eventsToShow > dataPicker().length} noLess={eventsToShow === 5 } />
     </section>
   );
 }
