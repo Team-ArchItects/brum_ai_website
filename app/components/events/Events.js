@@ -34,8 +34,8 @@ export default function EventSection() {
   }, []);
 
   return (
-    <section>
-      <div className="w-full sm:w-11/12 md:w-10/12 lg:w-9/12 2xl:w-8/12 text-center text-3xl pt-2 flex flex-col items-center  ">
+    <section className="w-full sm:w-11/12 md:w-10/12 lg:w-9/12 2xl:w-8/12 max-w-[1650px] flex flex-col items-center">
+      <div className="w-full text-center text-3xl pt-2 flex flex-col items-center  ">
         <h1 className="mt-8 text-4xl md:text-5xl text-center p-4 bg-clip-text text-transparent bg-gradient-to-r from-magenta via-citrus to-aqua">
           Upcoming Events
         </h1>
@@ -46,7 +46,7 @@ export default function EventSection() {
             ))}
         </div>
       </div>
-      <div className="flex justify-end mb-10">
+      <div className="w-full lg:w-9/12 flex justify-end mb-10">
         <Button text={"More Events"} location={"/events"} />
       </div>
     </section>
