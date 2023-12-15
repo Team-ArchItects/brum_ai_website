@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 export default function EventCard({ eventData, timeFrame }) {
-  const date = new Date(eventData.event_date);
+  const date = new Date(eventData.start_date);
   return (
     <article className="w-full sm:w-11/12 md:w-9/12 border-2 border-citrus rounded-2xl my-5 p-5 ">
       {timeFrame === "future" ? (
@@ -35,7 +35,7 @@ export default function EventCard({ eventData, timeFrame }) {
           {timeFrame === "future" && (
             <p>
               <span className="font-semibold underline">Time</span>:{" "}
-              {`${eventData.event_time.substring(
+              {`${eventData.start_time.substring(
                 0,
                 5
               )} - ${eventData.end_time.substring(0, 5)}`}
