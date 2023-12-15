@@ -1,4 +1,5 @@
 "use client";
+
 import { useState } from "react";
 import SocialsList from "./Socials";
 
@@ -6,7 +7,7 @@ export default function SocialDropdown({ data }) {
   const [dropdown, setDropdown] = useState("hidden");
   function handleOnClick() {
     dropdown === "hidden" ? setDropdown("block") : setDropdown("hidden");
-  }
+  };
   return (
     <section className="flex">
       <button
