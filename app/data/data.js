@@ -125,7 +125,3 @@ export const homepageData = {
     "Help us make the Midlands the home of AI in the UK. Interested to hear about our sponsorship packages? Can you host our meetups? Contact us now!",
   sponsorCopyBottom: "",
 };
-
-// export const contactPageData = {
-
-// }

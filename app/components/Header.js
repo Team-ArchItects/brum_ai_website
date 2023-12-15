@@ -8,7 +8,6 @@ import Image from "next/image";
 import Dropdown from "./header components/Dropdown";
 import SocialsList from "./header components/Socials";
 import SocialDropdown from "./header components/Social_Dropdown";
-import ThemeSwitcher from "../ThemeSwitcher";
 
 export default function Header({ data, pages }) {
   return (

@@ -1,5 +1,4 @@
 import { Be_Vietnam_Pro } from "next/font/google";
-import { Montserrat } from "next/font/google";
 import "./globals.css";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
