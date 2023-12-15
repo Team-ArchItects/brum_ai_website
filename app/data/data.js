@@ -65,8 +65,8 @@ export const footerSponsors = [
   {
     id: 1,
     name: "University of Aston",
-    imageLight: "/assets/aston_white.png",
-    imageDark: "/assets/aston_black.png",
+    imageLight: "/assets/astonuniversity.png",
+    imageDark: "/assets/astonuniversity.png",
     alt: "University of Aston logo",
     url: "https://www.aston.ac.uk/research/eps/acaira",
   },
@@ -89,8 +89,8 @@ export const footerSponsors = [
   {
     id: 4,
     name: "WealthWizards",
-    imageLight: "/assets/wealth_logo_white.png",
-    imageDark: "/assets/wealth_logo_black.png",
+    imageLight: "/assets/wealth_colour.png",
+    imageDark: "/assets/wealth_colour.png",
     alt: "WealthWizards logo",
     url: "https://www.wealthwizards.com/",
   },

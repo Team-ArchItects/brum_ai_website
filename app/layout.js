@@ -14,7 +14,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="en" className="overscroll-none">
       <body className={`${beVietnamPro.className} `}>
         <Providers>
           <Header data={headerSocials} pages={pages} />
