@@ -3,7 +3,7 @@
 import supabase from "../../utils/supabase";
 import { useState, useEffect } from "react";
 import NextEventsMap from "./NextEventsMap";
-import Button from "../banner/Button";
+import Button from "../Button";
 
 const todayDate = new Date();
 const newDate = `${todayDate.getFullYear()}-${todayDate.getMonth()}-${todayDate.getDate()}`;
@@ -19,20 +19,13 @@ export default function EventSection() {
         .gt("display_until_date", newDate)
         .order("start_date", { ascending: true })
         .limit(2);
-      console.log(data);
+
       if (error) {
         console.error("Error:", error.message);
         return;
       }
 
       if (data) {
-        console.log("Data:", data); // Log the data variable to check the values
-
-        // // Apply filtering and ordering
-        // const filteredData = data.filter(event => new Date(event.display_until) > new Date());
-        // const sortedData = filteredData.sort((a, b) => new Date(a.display_until) - new Date(b.display_until));
-        // const limitedData = sortedData.slice(0, 2);
-
         setEventsList(data);
       }
     };
@@ -53,8 +46,5 @@ export default function EventSection() {
       </section>
       <Button text={"More Events"} location={"/events"} />
     </section>
-    // <div>
-    //     <p>{eventsList?.[1]?.event_description}</p>
-    // </div>
   );
 }

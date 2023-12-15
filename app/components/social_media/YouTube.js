@@ -11,7 +11,6 @@ export default function YouTube() {
         src="https://www.youtube.com/embed/2fg-th5cTpg"
         sx={{
           // auto is the fallback
-
           aspectRatio: "3/2 auto",
         }}
       />
@@ -23,7 +22,6 @@ export default function YouTube() {
         src="https://www.youtube.com/embed/jtfYKxOjt00"
         sx={{
           // auto is the fallback
-
           aspectRatio: "3/2 auto",
         }}
       />

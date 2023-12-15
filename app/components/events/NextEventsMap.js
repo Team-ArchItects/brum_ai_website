@@ -7,7 +7,7 @@ export default function NextEventsMap({ data }) {
         style={{
           backgroundImage: `linear-gradient(rgba(255, 130, 46, 0.6), rgba(255, 130, 46, 0.6)), url(${data.image_url})`,
         }}
-        className={`border-4 border-citrus bg-cover bg-center rounded-2xl mt-5 mb-3 p-5 w-full max-w-[600px] justify-self-center`} // give a width and height
+        className={`border-4 border-citrus bg-cover bg-center rounded-2xl mt-5 mb-3 p-5 w-full max-w-[600px] justify-self-center`}
       >
         <h1 className="text-black font-bold text-3xl ">{`${data.event_name}`}</h1>
 

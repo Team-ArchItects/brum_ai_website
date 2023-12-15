@@ -1,6 +1,5 @@
-import Button from "@/app/components/banner/Button";
+import Button from "@/app/components/Button";
 import Image from "next/image";
-import Link from "next/link";
 
 export default function EventCard({ eventData, timeFrame }) {
   const date = new Date(eventData.start_date);
@@ -17,7 +16,6 @@ export default function EventCard({ eventData, timeFrame }) {
       ) : (
         <h2 className="font-bold text-2xl mb-5">{`${eventData.event_name}`}</h2>
       )}
-      {/* {timeFrame === "past" && <Image src="https://images.unsplash.com/photo-1545350089-47b3d117a92c?q=80&w=1933&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Event photo" width="150" height="150" />} */}
       <div className="flex flex-col 2xl:grid 2xl:grid-cols-[1fr_2fr] 2xl:grid-rows-none gap-6">
         <Image
           src={eventData.image_url}

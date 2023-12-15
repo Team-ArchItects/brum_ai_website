@@ -1,10 +1,8 @@
-import Image from "next/image";
-import Button from "./banner/Button";
+import Button from "./Button";
 import SponsorsList from "./footer components/Sponsors";
 import FooterGraffiti from "./footer components/FooterGraffiti";
 
 export default function Footer({ data }) {
-
   return (
     <section className="flex flex-col w-screen justify-between min-w-[360px] ">
       <FooterGraffiti />
@@ -32,7 +30,10 @@ export default function Footer({ data }) {
         <div className="flex flex-wrap flex-col items-center z-10">
           <div className="p-px bg-white dark:bg-black w-10/12 h-0 "></div>
           <div className="w-10/12 pb-32 pt-2 text-lg">
-            <p>&copy; Copyright {new Date().getFullYear()} BrumAI. All rights reserved.</p>
+            <p>
+              &copy; Copyright {new Date().getFullYear()} BrumAI. All rights
+              reserved.
+            </p>
           </div>
         </div>
       </footer>

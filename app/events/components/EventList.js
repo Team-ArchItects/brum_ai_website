@@ -17,7 +17,6 @@ export default function EventList() {
         .from("eventsList")
         .select("*")
         .order("start_date", { ascending: true });
-      /*.eq('id', idExample)*/
 
       if (error) {
         console.error("Error", error.message);
@@ -76,7 +75,6 @@ export default function EventList() {
       }
     }
     const visableEvents = eventCardArray.slice(0, eventsToShow);
-    // visableEvents.length < eventsToShow && setEventsToShow(Math.ceil(visableEvents.length / 5) * 5)
     return visableEvents;
   }
 
