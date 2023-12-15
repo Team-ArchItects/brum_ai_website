@@ -20,7 +20,7 @@ const Banner = () => {
             className="ml-2"
           />
         </h1>
-        <p className="text-small text-black font-medium lg:text-base mx-2">
+        <p className="text-sm text-black font-medium lg:text-base mx-2">
           {homepageData.aboutBanner}
         </p>
       </div>
