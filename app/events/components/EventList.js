@@ -40,7 +40,7 @@ export default function EventList() {
         eventsList
           .filter((eventData) => {
             const d1 = new Date();
-            const d2 = new Date(eventData.start_date);
+            const d2 = new Date(eventData.display_until_date);
             const decider = d1.getTime() < d2.getTime();
             return decider;
           })
@@ -57,7 +57,7 @@ export default function EventList() {
         eventsList
           .filter((eventData) => {
             const d1 = new Date();
-            const d2 = new Date(eventData.start_date);
+            const d2 = new Date(eventData.display_until_date);
             const decider = d1.getTime() > d2.getTime();
             return decider;
           })
