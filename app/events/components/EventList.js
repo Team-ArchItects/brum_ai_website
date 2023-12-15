@@ -74,7 +74,7 @@ export default function EventList() {
           });
       }
     }
-    const visableEvents = eventCardArray.slice(0, eventsToShow);
+    const visableEvents = eventCardArray.length === 0 ? (<h3 className="text-4xl text-black dark:text-white my-10">No events scheduled at the moment, please check back soon!</h3>) : eventCardArray.slice(0, eventsToShow);
     return visableEvents;
   }
 
