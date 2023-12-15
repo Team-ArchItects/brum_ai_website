@@ -9,15 +9,15 @@ const todayDate = new Date();
 const newDate = `${todayDate.getFullYear()}-${todayDate.getMonth()}-${todayDate.getDate()}`;
 
 export default function EventSection() {
-  const [testEvents, setTestEvents] = useState(null);
+  const [eventsList, setEventsList] = useState(null);
 
   useEffect(() => {
     const fetchEvents = async () => {
       const { data, error } = await supabase
-        .from("testEvents")
+        .from("eventsList")
         .select("*")
-        .gt("display_until", newDate)
-        .order("event_date", { ascending: true })
+        .gt("display_until_date", newDate)
+        .order("start_date", { ascending: true })
         .limit(2);
       console.log(data);
       if (error) {
@@ -33,7 +33,7 @@ export default function EventSection() {
         // const sortedData = filteredData.sort((a, b) => new Date(a.display_until) - new Date(b.display_until));
         // const limitedData = sortedData.slice(0, 2);
 
-        setTestEvents(data);
+        setEventsList(data);
       }
     };
 
@@ -41,20 +41,20 @@ export default function EventSection() {
   }, []);
 
   return (
-    <section className="w-9/12 2xl:w-8/12 text-center text-3xl pt-2">
+    <section className="w-full sm:w-11/12 md:w-10/12 lg:w-9/12 2xl:w-8/12 text-center text-3xl pt-2 flex flex-col items-center mb-10">
       <h1 className="mt-8 text-4xl md:text-5xl text-center p-4 bg-clip-text text-transparent bg-gradient-to-r from-magenta via-citrus to-aqua">
         Upcoming Events
       </h1>
-      <section className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-x-4 justify-center px-2 mb-9">
-        {testEvents &&
-          testEvents.map?.((nextEvents) => (
+      <section className="w-full lg:w-9/12 grid grid-cols-1  2xl:grid-cols-2 gap-x-4 justify-center px-2 mb-9">
+        {eventsList &&
+          eventsList.map?.((nextEvents) => (
             <NextEventsMap key={nextEvents.id} data={nextEvents} />
           ))}
       </section>
-     <Button text={"More Events"} location={"/events"} />
+      <Button text={"More Events"} location={"/events"} />
     </section>
     // <div>
-    //     <p>{testEvents?.[1]?.event_description}</p>
+    //     <p>{eventsList?.[1]?.event_description}</p>
     // </div>
   );
 }

@@ -7,17 +7,16 @@ import TenseButtons from "./TenseButtons";
 import MoreLessButtons from "./MoreLessButtons";
 
 export default function EventList() {
-  const [testEvents, setTestEvents] = useState(null);
+  const [eventsList, setEventsList] = useState(null);
   const [timeFrame, setTimeFrame] = useState("future");
   const [eventsToShow, setEventsToShow] = useState(5);
-
 
   useEffect(() => {
     const fetchEvents = async () => {
       const { data, error } = await supabase
-        .from("testEvents")
+        .from("eventsList")
         .select("*")
-        .order("event_date", { ascending: true });
+        .order("start_date", { ascending: true });
       /*.eq('id', idExample)*/
 
       if (error) {
@@ -25,7 +24,7 @@ export default function EventList() {
         return;
       }
       if (data) {
-        setTestEvents(data);
+        setEventsList(data);
       }
       console.log(data);
     };
@@ -38,12 +37,12 @@ export default function EventList() {
 
   function dataPicker() {
     const eventCardArray = [];
-    if (testEvents !== null) {
+    if (eventsList !== null) {
       if (timeFrame === "future") {
-        testEvents
+        eventsList
           .filter((eventData) => {
             const d1 = new Date();
-            const d2 = new Date(eventData.event_date);
+            const d2 = new Date(eventData.start_date);
             const decider = d1.getTime() < d2.getTime();
             return decider;
           })
@@ -57,10 +56,10 @@ export default function EventList() {
             );
           });
       } else if (timeFrame === "past") {
-        testEvents
+        eventsList
           .filter((eventData) => {
             const d1 = new Date();
-            const d2 = new Date(eventData.event_date);
+            const d2 = new Date(eventData.start_date);
             const decider = d1.getTime() > d2.getTime();
             return decider;
           })
@@ -86,13 +85,18 @@ export default function EventList() {
   };
   const showLessEvents = () => {
     setEventsToShow(eventsToShow - 5);
-  }
+  };
 
   return (
     <section className="w-full flex flex-col items-center">
       <TenseButtons futureOrPast={futureOrPast} />
       {dataPicker()}
-      <MoreLessButtons showLessEvents={showLessEvents} showMoreEvents={showMoreEvents} noMore={eventsToShow > dataPicker().length} noLess={eventsToShow === 5 } />
+      <MoreLessButtons
+        showLessEvents={showLessEvents}
+        showMoreEvents={showMoreEvents}
+        noMore={eventsToShow > dataPicker().length}
+        noLess={eventsToShow === 5}
+      />
     </section>
   );
 }
