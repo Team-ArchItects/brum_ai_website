@@ -29,6 +29,8 @@ test("user loads the page, goes to events page, goes to past events, loads five 
 
   await page.getByRole("button", { name: "Show More" }).click();
 
+  await page.getByRole("button", { name: "Show Less" }).click();
+
   await page.getByRole("button", { name: "Future Events" }).click();
 
   // await page
