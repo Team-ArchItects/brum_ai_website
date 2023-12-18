@@ -22,18 +22,29 @@ const getListData = (value, eventsList) => {
   return listData;
 };
 
-const getMonthData = (value) => {
-  if (value.month() === 8) {
-    return 1394;
-  }
+const getMonthData = (value, eventsList) => {
+const monthList = [];
+
+  eventsList !== null && eventsList.map(elem => {
+    const elemMonth = Number(elem.start_date.toString().substring(5, 7))-1;
+    console.log("elemMonth: ", elemMonth)
+    console.log(value)
+const elemYear = Number(elem.start_date.toString().substring(0, 4));
+if (value.$M === elemMonth && value.$y === elemYear) {
+  monthList.push(elem.event_name)
+}})
+return monthList;
 };
 const EventCalendar = ({eventsList}) => {
   const monthCellRender = (value) => {
-    const num = getMonthData(value);
-    return num ? (
+    const events = getMonthData(value, eventsList);
+    return events ? (
       <div className="notes-month">
-        <section>{num}</section>
-        <span>Backlog number</span>
+       {events.map((eventInfo, index) => (
+          <li key={index}>
+          {eventInfo}        
+          </li>
+        ))}
       </div>
     ) : null;
   };
@@ -54,7 +65,7 @@ const EventCalendar = ({eventsList}) => {
     if (info.type === 'month') return monthCellRender(current);
     return info.originNode;
   };
-  return <Calendar cellRender={cellRender} />;
+  return <Calendar cellRender={cellRender} mode={"year"} />;
 };
 
 export default EventCalendar;
