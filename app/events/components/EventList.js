@@ -25,7 +25,6 @@ export default function EventList() {
       if (data) {
         setEventsList(data);
       }
-      console.log(data);
     };
     fetchEvents();
   }, []);
@@ -41,7 +40,7 @@ export default function EventList() {
         eventsList
           .filter((eventData) => {
             const d1 = new Date();
-            const d2 = new Date(eventData.start_date);
+            const d2 = new Date(eventData.display_until_date);
             const decider = d1.getTime() < d2.getTime();
             return decider;
           })
@@ -58,7 +57,7 @@ export default function EventList() {
         eventsList
           .filter((eventData) => {
             const d1 = new Date();
-            const d2 = new Date(eventData.start_date);
+            const d2 = new Date(eventData.display_until_date);
             const decider = d1.getTime() > d2.getTime();
             return decider;
           })
@@ -74,7 +73,14 @@ export default function EventList() {
           });
       }
     }
-    const visableEvents = eventCardArray.slice(0, eventsToShow);
+    const visableEvents =
+      eventCardArray.length === 0 ? (
+        <h3 className="text-4xl text-black dark:text-white my-10">
+          No events scheduled at the moment, please check back soon!
+        </h3>
+      ) : (
+        eventCardArray.slice(0, eventsToShow)
+      );
     return visableEvents;
   }
 

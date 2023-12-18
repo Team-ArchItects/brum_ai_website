@@ -20,7 +20,7 @@ export default function SponsorsList({ data }) {
 
   return (
     <a href={data.url} target="_blank" rel="noopener noreferrer">
-      <Image src={src} width={100} height={100} alt={`${data.alt}`} />
+      <Image src={src} width={150} height={150} alt={`${data.alt}`} />
     </a>
   );
 }

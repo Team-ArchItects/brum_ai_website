@@ -54,7 +54,7 @@ export default function Dropdown({ pages }) {
 
       <div
         id="dropdown"
-        className={`z-10 ${dropdown} absolute left-12 top-16 bg-gray-700 divide-y divide-gray-100 rounded-lg shadow w-44 md:hidden`}
+        className={`z-10 ${dropdown} absolute left-3 top-16 bg-gray-700 divide-y divide-gray-100 rounded-lg shadow w-36 md:hidden`}
       >
         <ul
           className="py-2 text-sm text-white"
