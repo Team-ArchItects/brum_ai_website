@@ -19,7 +19,7 @@ export default function RootLayout({ children }) {
         <Providers>
           <Header data={headerSocials} pages={pages} />
           {children}
-          <Footer data={footerSponsors}/>
+          <Footer data={footerSponsors} />
         </Providers>
       </body>
     </html>
