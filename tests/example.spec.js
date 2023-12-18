@@ -33,8 +33,7 @@ test("user loads the page, goes to events page, goes to past events, loads five 
 
   await page.getByRole("button", { name: "Future Events" }).click();
 
-  // await page
-  // .getByRole("button", { name: "Attend the Event Arrow" }).click();
-
-  await expect(page).toHaveTitle("Brum.AI | Events");
+  await page
+    .locator('article:has-text("Future Event Example 2 - Title")')
+    .click();
 });
