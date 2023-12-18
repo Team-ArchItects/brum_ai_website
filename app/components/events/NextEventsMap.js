@@ -1,11 +1,11 @@
 export default function NextEventsMap({ data }) {
   const date = new Date(data.start_date);
-
+const image = data.image_url || "assets/placeholder_event_image.jpg";
   return (
     <a href={`${data.meetup_link}`} target="_blank" rel="noopener noreferrer">
       <article
         style={{
-          backgroundImage: `linear-gradient(rgba(255, 130, 46, 0.6), rgba(255, 130, 46, 0.6)), url(${data.image_url})`,
+          backgroundImage: `linear-gradient(rgba(255, 130, 46, 0.6), rgba(255, 130, 46, 0.6)), url(${image})`,
         }}
         className={`border-4 border-citrus bg-cover bg-center rounded-2xl mt-5 mb-3 p-5 w-full max-w-[600px] justify-self-center`}
       >
