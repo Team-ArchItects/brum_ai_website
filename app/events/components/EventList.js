@@ -5,6 +5,7 @@ import { useState, useEffect } from "react";
 import EventCard from "./EventCard";
 import TenseButtons from "./TenseButtons";
 import MoreLessButtons from "./MoreLessButtons";
+import EventCalendar from "./Calendar";
 
 export default function EventList() {
   const [eventsList, setEventsList] = useState(null);
@@ -25,7 +26,7 @@ export default function EventList() {
       if (data) {
         setEventsList(data);
       }
-      console.log(data);
+      // console.log(data);
     };
     fetchEvents();
   }, []);
@@ -87,6 +88,7 @@ export default function EventList() {
 
   return (
     <section className="w-full flex flex-col items-center">
+      <EventCalendar eventsList={eventsList}/>
       <TenseButtons futureOrPast={futureOrPast} />
       {dataPicker()}
       <MoreLessButtons

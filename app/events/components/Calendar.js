@@ -2,68 +2,24 @@
 import React from 'react';
 import { Badge, Calendar } from 'antd';
 
-const getListData = (value) => {
-  let listData;
-  switch (value.date()) {
-    case 8:
-      listData = [
-        {
-          type: 'warning',
-          content: 'This is warning event.',
-        },
-        {
-          type: 'success',
-          content: 'This is usual event.',
-        },
-      ];
-      break;
-    case 10:
-      listData = [
-        {
-          type: 'warning',
-          content: 'This is warning event.',
-        },
-        {
-          type: 'success',
-          content: 'This is usual event.',
-        },
-        {
-          type: 'error',
-          content: 'This is error event.',
-        },
-      ];
-      break;
-    case 15:
-      listData = [
-        {
-          type: 'warning',
-          content: 'This is warning event',
-        },
-        {
-          type: 'success',
-          content: 'This is very long usual event......',
-        },
-        {
-          type: 'error',
-          content: 'This is error event 1.',
-        },
-        {
-          type: 'error',
-          content: 'This is error event 2.',
-        },
-        {
-          type: 'error',
-          content: 'This is error event 3.',
-        },
-        {
-          type: 'error',
-          content: 'This is error event 4.',
-        },
-      ];
-      break;
-    default:
-  }
-  return listData || [];
+const getListData = (value, eventsList) => {
+  const listData = [];
+  const calendarDateString = value.$d.toString().substring(0,15);
+  eventsList !== null && eventsList.map(elem => {
+    const elemDate = new Date(elem.start_date);
+    const elemDateString = elemDate.toString().substring(0,15);
+    if (elemDateString === calendarDateString) {
+      listData.push({
+        type: "warning",
+        content: `${elem.event_name}`
+      })
+      console.log("Event date string: ", elemDateString)
+    }
+  })
+
+  // types: warning (orange), success (green), error (red)
+
+  return listData;
 };
 
 const getMonthData = (value) => {
@@ -71,7 +27,7 @@ const getMonthData = (value) => {
     return 1394;
   }
 };
-const EventCalendar = () => {
+const EventCalendar = ({eventsList}) => {
   const monthCellRender = (value) => {
     const num = getMonthData(value);
     return num ? (
@@ -82,7 +38,7 @@ const EventCalendar = () => {
     ) : null;
   };
   const dateCellRender = (value) => {
-    const listData = getListData(value);
+    const listData = getListData(value, eventsList);
     return (
       <ul className="events">
         {listData.map((item) => (
