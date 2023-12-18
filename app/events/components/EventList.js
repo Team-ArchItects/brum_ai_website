@@ -5,6 +5,9 @@ import { useState, useEffect } from "react";
 import EventCard from "./EventCard";
 import TenseButtons from "./TenseButtons";
 import MoreLessButtons from "./MoreLessButtons";
+import EventCalendar from "./Calendar";
+import CalendarSwitcher from "./Switch";
+
 
 export default function EventList() {
   const [eventsList, setEventsList] = useState(null);
@@ -93,6 +96,9 @@ export default function EventList() {
 
   return (
     <section className="w-full flex flex-col items-center">
+      <CalendarSwitcher />
+      <br></br>
+      <EventCalendar eventsList={eventsList}/>
       <TenseButtons futureOrPast={futureOrPast} />
       {dataPicker()}
       <MoreLessButtons
