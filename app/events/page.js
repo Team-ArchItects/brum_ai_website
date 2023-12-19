@@ -1,4 +1,4 @@
-import EventList from "./components/EventList";
+import EventDetails from "./components/EventDetails";
 
 
 export const metadata = {
@@ -14,7 +14,7 @@ export default function Events() {
         <h1 className="mb-5 h-14 text-center text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-magenta via-citrus to-aqua w-80">
           Events Page
         </h1>
-        <EventList />
+        <EventDetails />
       </section>
     </>
   );
