@@ -11,7 +11,8 @@ const getListData = (value, eventsList) => {
     if (elemDateString === calendarDateString) {
       listData.push({
         type: "warning",
-        content: `${elem.event_name}`
+        content: elem.event_name,
+        link: elem.meetup_link
       })
       console.log("Event date string: ", elemDateString)
     }
@@ -27,11 +28,11 @@ const monthList = [];
 
   eventsList !== null && eventsList.map(elem => {
     const elemMonth = Number(elem.start_date.toString().substring(5, 7))-1;
-    console.log("elemMonth: ", elemMonth)
-    console.log(value)
 const elemYear = Number(elem.start_date.toString().substring(0, 4));
 if (value.$M === elemMonth && value.$y === elemYear) {
-  monthList.push(elem.event_name)
+  monthList.push(
+    {name: elem.event_name, 
+     link: elem.meetup_link})
 }})
 return monthList;
 };
@@ -43,9 +44,11 @@ const EventCalendar = ({eventsList}) => {
     return events ? (
       <div className="notes-month">
        {events.map((eventInfo, index) => (
-          <li key={index}>
-          {eventInfo}        
+         <a key={index} href={eventInfo.link} target="_blank"> 
+         <li>
+          {eventInfo.name}        
           </li>
+          </a>
         ))}
       </div>
     ) : null;
@@ -55,9 +58,9 @@ const EventCalendar = ({eventsList}) => {
     return (
       <ul className="events">
         {listData.map((item) => (
-          <li key={item.content}>
+          <a key={item.content} href={item.link} target="_blank"><li >
             <Badge status={item.type} text={item.content} />
-          </li>
+          </li></a>
         ))}
       </ul>
     );
@@ -73,10 +76,10 @@ const EventCalendar = ({eventsList}) => {
       components: {
         Calendar: {
           // fullBg: '#FF822E', // Also background color
-          // itemActiveBg: '#FF822E', // Active panel color
-          // colorBgContainer: '#f0f0f0', // Background color
+          //itemActiveBg: '#00CCCC', // Active panel color
+          colorBgContainer: '#f0f0f0', // Background color
           // colorPrimary: '#00CCCC', // Text color
-          // colorSplit: '#00CCCC', // Underline/day border
+          colorSplit: '#FF822E', // Underline/day border
           // colorText: '#00CCCC', // Non selected text
           // colorTextDisabled: '#00CCCC', // Days outside the month
           // controlItemBgActive: '#00CCCC',  // Selected day
@@ -87,7 +90,7 @@ const EventCalendar = ({eventsList}) => {
       }
     }}
     >
-      <Calendar cellRender={cellRender} fullPanelBg={"#FF822E"}/>
+    <Calendar cellRender={cellRender}/>
     </ConfigProvider>
   );
 };
