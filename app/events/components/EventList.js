@@ -1,37 +1,8 @@
-"use client";
-
-import supabase from "../../utils/supabase";
-import { useState, useEffect } from "react";
 import EventCard from "./EventCard";
-import TenseButtons from "./TenseButtons";
 import MoreLessButtons from "./MoreLessButtons";
+import TenseButtons from "./TenseButtons";
 
-export default function EventList() {
-  const [eventsList, setEventsList] = useState(null);
-  const [timeFrame, setTimeFrame] = useState("future");
-  const [eventsToShow, setEventsToShow] = useState(5);
-
-  useEffect(() => {
-    const fetchEvents = async () => {
-      const { data, error } = await supabase
-        .from("eventsList")
-        .select("*")
-        .order("start_date", { ascending: true });
-
-      if (error) {
-        console.error("Error", error.message);
-        return;
-      }
-      if (data) {
-        setEventsList(data);
-      }
-    };
-    fetchEvents();
-  }, []);
-
-  function futureOrPast(tense) {
-    setTimeFrame(tense);
-  }
+const EventList = ({eventsList, showMoreEvents, showLessEvents, timeFrame, futureOrPast, eventsToShow}) => {
 
   function dataPicker() {
     const eventCardArray = [];
@@ -84,15 +55,8 @@ export default function EventList() {
     return visableEvents;
   }
 
-  const showMoreEvents = () => {
-    setEventsToShow(eventsToShow + 5);
-  };
-  const showLessEvents = () => {
-    setEventsToShow(eventsToShow - 5);
-  };
-
   return (
-    <section className="w-full flex flex-col items-center">
+    <>
       <TenseButtons futureOrPast={futureOrPast} />
       {dataPicker()}
       <MoreLessButtons
@@ -101,6 +65,8 @@ export default function EventList() {
         noMore={eventsToShow > dataPicker().length}
         noLess={eventsToShow === 5}
       />
-    </section>
+    </>
   );
-}
+};
+
+export default EventList;

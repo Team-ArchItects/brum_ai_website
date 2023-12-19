@@ -44,6 +44,9 @@ export default function Dropdown({ pages }) {
         <Link href="/events" className="ml-3 bg-navy text-white">
           Events
         </Link>
+        <Link href="/aboutus" className="ml-3 bg-navy text-white">
+          About us
+        </Link>
         <Link href="/contact" className="ml-3 bg-navy text-white">
           Contact us
         </Link>
