@@ -11,6 +11,8 @@ export default function EmbedX() {
         async
         defer
       ></Script>
+      <br></br>
     </section>
+
   );
 }
