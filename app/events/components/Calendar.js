@@ -84,7 +84,7 @@ const EventCalendar = ({eventsList}) => {
           // colorTextDisabled: '#00CCCC', // Days outside the month
           // controlItemBgActive: '#00CCCC',  // Selected day
           // controlItemBgHover: '#FF822E', // Hover over selected day
-          // fontFamily: '', //Font style, by being empty applies site default of vietnam
+          fontFamily: '', //Font style, by being empty applies site default of vietnam
           // fontSize: 14, // Font size
         }
       }
