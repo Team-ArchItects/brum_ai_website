@@ -5,7 +5,7 @@ export default function AboutUsMap({ data }) {
     <section className="grid grid-cols-3 p-4">
       <div className="col-span-1">
         <Image
-          src={data.url}
+          src={data.imageUrl}
           alt={`Profile photo of ${data.name}`}
           width={150}
           height={150}
@@ -14,6 +14,7 @@ export default function AboutUsMap({ data }) {
       </div>
       <div className="col-span-2 px-4">
         <h3 className="text-citrus">{data.name}</h3>
+        <p className="italic">{data.role}</p>
         <p className="">{data.description}</p>
         <a
           href={data.linkedin}

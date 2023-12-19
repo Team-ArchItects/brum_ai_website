@@ -134,66 +134,71 @@ export const homepageData = {
 export const coreTeamData = [
   {
     name: "Atanas Kozarev",
-    url: "/assets/people_photos/atanas.jpg",
+    role: "Leading the Community",
+    imageUrl: "/assets/people_photos/atanas.jpg",
     description:
       "Platform Engineer at Capgemini - Organising brum.ai - 2x AWS Certified - Terraform",
     linkedin: "https://www.linkedin.com/in/kozarev/",
   },
   {
     name: "Nathan Lloyd",
-    url: "/assets/people_photos/nathan.jpg",
+    role: "Leading the Community",
+    imageUrl: "/assets/people_photos/nathan.jpg",
     description: "Student at Ontario Tech",
     linkedin: "https://www.linkedin.com/in/nathanlloyd7/",
   },
   {
     name: "Vincent Hall",
-    url: "/assets/people_photos/vincent.jpg",
+    role: "Co-organiser",
+    imageUrl: "/assets/people_photos/vincent.jpg",
     description: "Entrepreneur in AI",
     linkedin: "https://www.linkedin.com/in/vincent-hall-consulting/",
   },
   {
-    name: "Peet Denny",
-    url: "/assets/people_photos/peet.jpg",
-    description: "Founding Partner @ Climate VC - Brum.AI Founder",
-    linkedin: "https://www.linkedin.com/in/peet-denny/",
-  },
-  {
     name: "Dr Anandhi Vivek Dhukaram",
-    url: "/assets/people_photos/anandhi.jpg",
+    role: "Co-organiser",
+    imageUrl: "/assets/people_photos/anandhi.jpg",
     description: "AI Innovation & Strategy Consultant - AI Literacy Training",
     linkedin: "https://www.linkedin.com/in/anandhi-vivek-dhukaram/",
+  },
+  {
+    name: "Peet Denny",
+    role: "Founder",
+    imageUrl: "/assets/people_photos/peet.jpg",
+    description: "Founding Partner @ Climate VC - Brum.AI Founder",
+    linkedin: "https://www.linkedin.com/in/peet-denny/",
   },
 ];
 
 export const websiteTeamData = [
   {
     name: "David Mason",
-    url: "/assets/people_photos/david.jpg",
+    imageUrl: "/assets/people_photos/david.jpg",
     linkedin: "https://www.linkedin.com/in/davidianmason1702/",
   },
   {
     name: "Cal Woodford",
-    url: "/assets/people_photos/cal.jpg",
+    imageUrl: "/assets/people_photos/cal.jpg",
     linkedin: "https://www.linkedin.com/in/callumwoodford/",
   },
   {
     name: "Tay Khan",
-    url: "/assets/people_photos/tay.jpg",
+    imageUrl: "/assets/people_photos/tay.jpg",
     linkedin: "https://www.linkedin.com/in/tay-khan/",
   },
   {
     name: "Samantha German",
-    url: "/assets/people_photos/sam.jpg",
+    imageUrl: "/assets/people_photos/sam.jpg",
     linkedin: "https://www.linkedin.com/in/samantha-german-241265289/",
   },
   {
     name: "Alexander Brown",
-    url: "/assets/people_photos/alex.jpg",
+    imageUrl: "/assets/people_photos/alex.jpg",
     linkedin: "https://www.linkedin.com/in/alexgeoffrey/",
   },
   {
     name: "Katarzyna Baginska",
-    url: "/assets/people_photos/kat.jpg",
+    imageUrl: "/assets/people_photos/kat.jpg",
     linkedin: "https://www.linkedin.com/in/katarzyna-baginska-0baa4a152/",
   },
 ];
