@@ -1,15 +1,16 @@
 import Image from "next/image";
+import LinkedInImage from "./LinkedInImage";
 
 export default function AboutUsMap({ data }) {
   return (
     <section className="grid grid-cols-3 p-4">
-      <div className="col-span-1">
+      <div className="col-span-1 flex justify-center items-center ">
         <Image
           src={data.imageUrl}
           alt={`Profile photo of ${data.name}`}
           width={150}
           height={150}
-          className="rounded-full aspect-square"
+          className="rounded-full aspect-auto aspect-[100/99]"
         />
       </div>
       <div className="col-span-2 px-4">
@@ -22,12 +23,7 @@ export default function AboutUsMap({ data }) {
           rel="noopener noreferrer"
           className=""
         >
-          <Image
-            src={"/assets/linkedin_icon_white.svg"}
-            width={32}
-            height={32}
-            alt={"linkedin logo"}
-          />
+          <LinkedInImage />
         </a>
       </div>
     </section>

@@ -133,6 +133,7 @@ export const homepageData = {
 
 export const coreTeamData = [
   {
+    id: 1,
     name: "Atanas Kozarev",
     role: "Leading the Community",
     imageUrl: "/assets/people_photos/atanas.jpg",
@@ -141,6 +142,7 @@ export const coreTeamData = [
     linkedin: "https://www.linkedin.com/in/kozarev/",
   },
   {
+    id: 2,
     name: "Nathan Lloyd",
     role: "Leading the Community",
     imageUrl: "/assets/people_photos/nathan.jpg",
@@ -148,6 +150,7 @@ export const coreTeamData = [
     linkedin: "https://www.linkedin.com/in/nathanlloyd7/",
   },
   {
+    id: 3,
     name: "Vincent Hall",
     role: "Co-organiser",
     imageUrl: "/assets/people_photos/vincent.jpg",
@@ -155,6 +158,7 @@ export const coreTeamData = [
     linkedin: "https://www.linkedin.com/in/vincent-hall-consulting/",
   },
   {
+    id: 4,
     name: "Dr Anandhi Vivek Dhukaram",
     role: "Co-organiser",
     imageUrl: "/assets/people_photos/anandhi.jpg",
@@ -162,6 +166,7 @@ export const coreTeamData = [
     linkedin: "https://www.linkedin.com/in/anandhi-vivek-dhukaram/",
   },
   {
+    id: 5,
     name: "Peet Denny",
     role: "Founder",
     imageUrl: "/assets/people_photos/peet.jpg",
@@ -172,31 +177,37 @@ export const coreTeamData = [
 
 export const websiteTeamData = [
   {
+    id: 1,
     name: "David Mason",
     imageUrl: "/assets/people_photos/david.jpg",
     linkedin: "https://www.linkedin.com/in/davidianmason1702/",
   },
   {
+    id: 2,
     name: "Cal Woodford",
     imageUrl: "/assets/people_photos/cal.jpg",
     linkedin: "https://www.linkedin.com/in/callumwoodford/",
   },
   {
+    id: 3,
     name: "Tay Khan",
     imageUrl: "/assets/people_photos/tay.jpg",
     linkedin: "https://www.linkedin.com/in/tay-khan/",
   },
   {
+    id: 4,
     name: "Samantha German",
     imageUrl: "/assets/people_photos/sam.jpg",
     linkedin: "https://www.linkedin.com/in/samantha-german-241265289/",
   },
   {
+    id: 5,
     name: "Alexander Brown",
     imageUrl: "/assets/people_photos/alex.jpg",
     linkedin: "https://www.linkedin.com/in/alexgeoffrey/",
   },
   {
+    id: 6,
     name: "Katarzyna Baginska",
     imageUrl: "/assets/people_photos/kat.jpg",
     linkedin: "https://www.linkedin.com/in/katarzyna-baginska-0baa4a152/",
