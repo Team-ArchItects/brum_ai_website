@@ -1,6 +1,6 @@
 "use client"
 import React from 'react';
-import { Badge, Calendar } from 'antd';
+import { Badge, Calendar, ConfigProvider } from 'antd';
 
 const getListData = (value, eventsList) => {
   const listData = [];
@@ -35,6 +35,8 @@ if (value.$M === elemMonth && value.$y === elemYear) {
 }})
 return monthList;
 };
+
+
 const EventCalendar = ({eventsList}) => {
   const monthCellRender = (value) => {
     const events = getMonthData(value, eventsList);
@@ -65,7 +67,29 @@ const EventCalendar = ({eventsList}) => {
     if (info.type === 'month') return monthCellRender(current);
     return info.originNode;
   };
-  return <Calendar cellRender={cellRender} />;
+  return (
+    <ConfigProvider
+    theme={{
+      components: {
+        Calendar: {
+          // fullBg: '#FF822E', // Also background color
+          // itemActiveBg: '#FF822E', // Active panel color
+          // colorBgContainer: '#f0f0f0', // Background color
+          // colorPrimary: '#00CCCC', // Text color
+          // colorSplit: '#00CCCC', // Underline/day border
+          // colorText: '#00CCCC', // Non selected text
+          // colorTextDisabled: '#00CCCC', // Days outside the month
+          // controlItemBgActive: '#00CCCC',  // Selected day
+          // controlItemBgHover: '#FF822E', // Hover over selected day
+          // fontFamily: '', //Font style, by being empty applies site default of vietnam
+          // fontSize: 14, // Font size
+        }
+      }
+    }}
+    >
+      <Calendar cellRender={cellRender} fullPanelBg={"#FF822E"}/>
+    </ConfigProvider>
+  );
 };
 
 export default EventCalendar;

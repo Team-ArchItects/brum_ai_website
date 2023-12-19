@@ -15,18 +15,16 @@ const CalendarSwitcher = () => {
       theme={{
         components: {
           Switch: {
-            colorPrimary: '#E708FF',
-            colorPrimaryBorder: '#FF822E',
-            colorPrimaryHover: '#BF047D',
-            handleBg: '#FF822E',
-            colorPrimaryBg: '#FF822E',
-            colorTextTertiary: '#FF822E'
-
+            colorPrimary: '#00CCCC',  // Switch right background
+            colorPrimaryHover: '#02A3A3', // Switch right background hover
+            handleBg: '#FF822E', // Toggle colour
+            colorTextTertiary: '#AB08BD', // Switch left background hover
+            // Switch left background is the Tailwind background colour (bg-) below
           }
         }
       }}
     >
-      <Switch onChange={onChange} className=""/>
+      <Switch onChange={onChange} className="bg-magenta"/>
     </ConfigProvider>
   );
 };
