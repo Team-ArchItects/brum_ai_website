@@ -1,58 +1,3 @@
-export const aboutusdata = [
-
-
-  {
-    name: "Atanas Kozarev",
-    url: "public/assets/people_photos/atanas.jpg",
-    linkedin: "https://www.linkedin.com/in/kozarev/",
-  },
-  {
-    name: "Nathan Lloyd",
-    url: "public/assets/people_photos/nathan.jpg",
-    linkedin: "https://www.linkedin.com/in/nathanlloyd7/",
-  },
-  {
-    name: "Vincent Hall",
-    url: "public/assets/people_photos/vincent.jpg",
-    linkedin: "https://www.linkedin.com/in/vincent-hall-consulting/",
-  },
-  {
-    name: "Peet Denny",
-    url: "public/assets/people_photos/peet.jpg",
-    linkedin: "https://www.linkedin.com/in/peet-denny/",
-  },
-  {
-    name: "David Mason",
-    url: "public/assets/people_photos/david.jpg",
-    linkedin: "https://www.linkedin.com/in/davidianmason1702/",
-  },
-  {
-    name: "Cal Woodford",
-    url: "public/assets/people_photos/cal.jpg",
-    linkedin: "https://www.linkedin.com/in/callumwoodford/",
-  },
-  {
-    name: "Tay Khan",
-    url: "public/assets/people_photos/tay.jpg",
-    linkedin: "https://www.linkedin.com/in/tay-khan/",
-  },
-  {
-    name: "Samantha German",
-    url: "public/assets/people_photos/sam.jpg",
-    linkedin: "https://www.linkedin.com/in/samantha-german-241265289/",
-  },
-  {
-    name: "Alexander Brown",
-    url: "public/assets/people_photos/alex.jpg",
-    linkedin: "https://www.linkedin.com/in/alexgeoffrey/",
-  },
-  {
-    name: "Katarzyna Baginska",
-    url: "public/assets/people_photos/kat.jpg",
-    linkedin: "https://www.linkedin.com/in/katarzyna-baginska-0baa4a152/",
-  },
-]
-
 export const pages = [
   {
     id: 1,
@@ -185,3 +130,75 @@ export const homepageData = {
     "Help us make the Midlands the home of AI in the UK. Interested to hear about our sponsorship packages? Can you host our meetups? Contact us now!",
   sponsorCopyBottom: "",
 };
+
+export const coreTeamData = [
+  {
+    name: "Atanas Kozarev",
+    role: "Leading the Community",
+    imageUrl: "/assets/people_photos/atanas.jpg",
+    description:
+      "Platform Engineer at Capgemini - Organising brum.ai - 2x AWS Certified - Terraform",
+    linkedin: "https://www.linkedin.com/in/kozarev/",
+  },
+  {
+    name: "Nathan Lloyd",
+    role: "Leading the Community",
+    imageUrl: "/assets/people_photos/nathan.jpg",
+    description: "Student at Ontario Tech",
+    linkedin: "https://www.linkedin.com/in/nathanlloyd7/",
+  },
+  {
+    name: "Vincent Hall",
+    role: "Co-organiser",
+    imageUrl: "/assets/people_photos/vincent.jpg",
+    description: "Entrepreneur in AI",
+    linkedin: "https://www.linkedin.com/in/vincent-hall-consulting/",
+  },
+  {
+    name: "Dr Anandhi Vivek Dhukaram",
+    role: "Co-organiser",
+    imageUrl: "/assets/people_photos/anandhi.jpg",
+    description: "AI Innovation & Strategy Consultant - AI Literacy Training",
+    linkedin: "https://www.linkedin.com/in/anandhi-vivek-dhukaram/",
+  },
+  {
+    name: "Peet Denny",
+    role: "Founder",
+    imageUrl: "/assets/people_photos/peet.jpg",
+    description: "Founding Partner @ Climate VC - Brum.AI Founder",
+    linkedin: "https://www.linkedin.com/in/peet-denny/",
+  },
+];
+
+export const websiteTeamData = [
+  {
+    name: "David Mason",
+    imageUrl: "/assets/people_photos/david.jpg",
+    linkedin: "https://www.linkedin.com/in/davidianmason1702/",
+  },
+  {
+    name: "Cal Woodford",
+    imageUrl: "/assets/people_photos/cal.jpg",
+    linkedin: "https://www.linkedin.com/in/callumwoodford/",
+  },
+  {
+    name: "Tay Khan",
+    imageUrl: "/assets/people_photos/tay.jpg",
+    linkedin: "https://www.linkedin.com/in/tay-khan/",
+  },
+  {
+    name: "Samantha German",
+    imageUrl: "/assets/people_photos/sam.jpg",
+    linkedin: "https://www.linkedin.com/in/samantha-german-241265289/",
+  },
+  {
+    name: "Alexander Brown",
+    imageUrl: "/assets/people_photos/alex.jpg",
+    linkedin: "https://www.linkedin.com/in/alexgeoffrey/",
+  },
+  {
+    name: "Katarzyna Baginska",
+    imageUrl: "/assets/people_photos/kat.jpg",
+    linkedin: "https://www.linkedin.com/in/katarzyna-baginska-0baa4a152/",
+  },
+];
