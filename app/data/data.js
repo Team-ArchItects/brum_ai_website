@@ -1,3 +1,58 @@
+export const aboutusdata = [
+
+
+  {
+    name: "Atanas Kozarev",
+    url: "public/assets/people_photos/atanas.jpg",
+    linkedin: "https://www.linkedin.com/in/kozarev/",
+  },
+  {
+    name: "Nathan Lloyd",
+    url: "public/assets/people_photos/nathan.jpg",
+    linkedin: "https://www.linkedin.com/in/nathanlloyd7/",
+  },
+  {
+    name: "Vincent Hall",
+    url: "public/assets/people_photos/vincent.jpg",
+    linkedin: "https://www.linkedin.com/in/vincent-hall-consulting/",
+  },
+  {
+    name: "Peet Denny",
+    url: "public/assets/people_photos/peet.jpg",
+    linkedin: "https://www.linkedin.com/in/peet-denny/",
+  },
+  {
+    name: "David Mason",
+    url: "public/assets/people_photos/david.jpg",
+    linkedin: "https://www.linkedin.com/in/davidianmason1702/",
+  },
+  {
+    name: "Cal Woodford",
+    url: "public/assets/people_photos/cal.jpg",
+    linkedin: "https://www.linkedin.com/in/callumwoodford/",
+  },
+  {
+    name: "Tay Khan",
+    url: "public/assets/people_photos/tay.jpg",
+    linkedin: "https://www.linkedin.com/in/tay-khan/",
+  },
+  {
+    name: "Samantha German",
+    url: "public/assets/people_photos/sam.jpg",
+    linkedin: "https://www.linkedin.com/in/samantha-german-241265289/",
+  },
+  {
+    name: "Alexander Brown",
+    url: "public/assets/people_photos/alex.jpg",
+    linkedin: "https://www.linkedin.com/in/alexgeoffrey/",
+  },
+  {
+    name: "Katarzyna Baginska",
+    url: "public/assets/people_photos/kat.jpg",
+    linkedin: "https://www.linkedin.com/in/katarzyna-baginska-0baa4a152/",
+  },
+]
+
 export const pages = [
   {
     id: 1,
@@ -11,6 +66,11 @@ export const pages = [
   },
   {
     id: 3,
+    label: "About us",
+    link: "/aboutus",
+  },
+  {
+    id: 4,
     label: "Contact",
     link: "/contact",
   },
