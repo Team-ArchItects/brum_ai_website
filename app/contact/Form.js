@@ -68,10 +68,12 @@ export const ContactUsForm = () => {
           type="select"
           name="user_subject"
         >
-          <option value="General">General</option>
-          <option value="Volunteering">Volunteering</option>
-          <option value="Sponsoring">Sponsoring</option>
           <option value="Event Queries">Event Queries</option>
+          <option value="Volunteering">Volunteering</option>
+          <option value="Sponsorship">Sponsorship</option>
+          <option value="Speaker Enquiry">Speaker Enquiry</option>
+          <option value="General">General</option>
+          
         </select>
         <label className="newlabel w-full " for="message">
           Message
