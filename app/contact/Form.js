@@ -48,7 +48,7 @@ export const ContactUsForm = () => {
           required
           id="user_name"
         />
-        <label className="newlabel mb-2 w-full " for="user_email">
+        <label className="newlabel w-full " for="user_email">
           Email
         </label>
         <input
@@ -58,7 +58,7 @@ export const ContactUsForm = () => {
           type="email"
           name="user_email"
         />
-        <label className="newlabel mb-2 w-full " for="user_subject">
+        <label className="newlabel w-full " for="user_subject">
           Subject
         </label>
         <select
