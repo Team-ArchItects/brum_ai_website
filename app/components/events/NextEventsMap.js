@@ -5,17 +5,17 @@ const image = data.image_url || "assets/placeholder_event_image.jpg";
     <a href={`${data.meetup_link}`} target="_blank" rel="noopener noreferrer"className="w-fit">
       <article
         style={{
-          backgroundImage: `linear-gradient(rgba(255, 130, 46, 0.8), rgba(255, 130, 46, 0.8)), url(${image})`,
+          backgroundImage: `linear-gradient(rgba(255, 148, 77, 0.87), rgba(255, 148, 77, 0.87)), url(${image})`,
         }}
-        className={`border-4 border-citrus bg-cover bg-center rounded-2xl mt-5 mb-3 p-5 w-full max-w-[600px] justify-self-center`}
+        className={`border-4 border-citrus bg-cover bg-center rounded-2xl mt-5 mb-3 p-5 w-full max-w-[600px] justify-self-center transition-all hover:scale-110`}
       >
-        <div className="backdrop-blur-sm">
-        <h1 className="text-black font-bold text-3xl backdrop-blur-sm">{`${data.event_name}`}</h1>
+        <div className="flex flex-col ">
+        <h1 className="text-black font-bold text-3xl backdrop-blur-sm w-fit self-center p-0.5">{`${data.event_name}`}</h1>
 
-        <p className="text-black font-bold">{`${date
+        <p className="text-black font-bold backdrop-blur-sm w-fit self-center text-2xl p-0.5">{`${date
           .toString()
           .substring(4, 15)}`}</p>
-        <p className="text-black font-bold text-base">{`${data.start_time.substring(
+        <p className="text-black font-bold text-base backdrop-blur-sm w-fit self-center p-0.5">{`${data.start_time.substring(
           0,
           5
         )} - ${data.end_time.substring(0, 5)}`}</p>
