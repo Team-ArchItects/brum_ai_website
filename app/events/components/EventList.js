@@ -2,8 +2,14 @@ import EventCard from "./EventCard";
 import MoreLessButtons from "./MoreLessButtons";
 import TenseButtons from "./TenseButtons";
 
-const EventList = ({eventsList, showMoreEvents, showLessEvents, timeFrame, futureOrPast, eventsToShow}) => {
-
+const EventList = ({
+  eventsList,
+  showMoreEvents,
+  showLessEvents,
+  timeFrame,
+  futureOrPast,
+  eventsToShow,
+}) => {
   function dataPicker() {
     const eventCardArray = [];
     if (eventsList !== null) {
@@ -57,7 +63,7 @@ const EventList = ({eventsList, showMoreEvents, showLessEvents, timeFrame, futur
 
   return (
     <>
-      <TenseButtons futureOrPast={futureOrPast} />
+      <TenseButtons futureOrPast={futureOrPast} timeFrame={timeFrame} />
       {dataPicker()}
       <MoreLessButtons
         showLessEvents={showLessEvents}
