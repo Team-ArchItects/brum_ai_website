@@ -1,10 +1,5 @@
 import Image from "next/image";
-// import Link from "next/link";
-// import LinkedInLink from "./header components/LinkedIn_Link";
-// import DiscordLink from "./header components/Discord_Link";
-// import XLink from "./header components/X-Link";
-// import InstagramLink from "./header components/Instargram_Link";
-// import MeetupLink from "./header components/Meetup_Link";
+import Link from "next/link";
 import Dropdown from "./header components/Dropdown";
 import SocialsList from "./header components/Socials";
 import SocialDropdown from "./header components/Social_Dropdown";
@@ -17,14 +12,14 @@ export default function Header({ data, pages }) {
           <Dropdown pages={pages} />
         </div>
       </div>
-      <div className="flex justify-center">
+      <Link href="/" className="flex justify-center">
         <Image
           src="/assets/orange_logo.png"
           width={100}
           height={100}
           alt="Brumai Logo in orange"
         />
-      </div>
+      </Link>
       <div className="flex justify-end items-center">
         <SocialDropdown data={data} />
         <div className="hidden md:flex justify-end items-center space-x-4">
