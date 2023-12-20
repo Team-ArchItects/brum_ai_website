@@ -131,6 +131,17 @@ export const homepageData = {
   sponsorCopyBottom: "",
 };
 
+export const aboutUsCopy = {
+  title: 
+  "About Us",
+  aboutUsP1: 
+  "BrumAI is the home of AI in the Midlands.",
+  aboutUsP2:
+    "We are a dynamic community dedicated to fostering innovation, collaboration, and learning in the field of Artificial Intelligence.",
+  aboutUsP3:
+    "Our mission is to bring together local researchers, students, developers and founders passionate about AI, creating a platform where ideas are exchanged, knowledge is enriched, and connections are formed.",
+};
+
 export const coreTeamData = [
   {
     id: 1,

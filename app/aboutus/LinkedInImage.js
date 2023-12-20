@@ -21,11 +21,12 @@ export default function LinkedInImage () {
     };
 
     return(
+      <div className="pt-2">
         <Image
         src={src}
         width={32}
         height={32}
         alt={"linkedin logo"}
-      />
+      /></div>
     )
 }

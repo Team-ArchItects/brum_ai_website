@@ -1,5 +1,5 @@
 import AboutUsMap from "./Aboutus";
-import { coreTeamData, websiteTeamData } from "../data/data";
+import { coreTeamData, websiteTeamData, aboutUsCopy } from "../data/data";
 
 export const metadata = {
   title: "Brum.AI | About",
@@ -9,6 +9,18 @@ export const metadata = {
 export default function AboutUs() {
   return (
     <section>
+         <div className="flex flex-col items-center justify-between ">
+        <h1 className="mt-8 text-2xl md:text-3xl text-center p-4 bg-clip-text text-transparent bg-gradient-to-r from-magenta via-citrus to-aqua">
+        {aboutUsCopy.title}
+        </h1>
+        
+        <div className="flex flex-col text-left w-9/12 p-2 md:px-10">
+        <p>{aboutUsCopy.aboutUsP1}</p>
+        <br/>
+        <p>{aboutUsCopy.aboutUsP2}</p>
+        <br/>
+        <p>{aboutUsCopy.aboutUsP3}</p>
+         </div></div>
       <div className="flex flex-col items-center justify-between ">
         <h1 className="mt-8 text-2xl md:text-3xl text-center p-4 bg-clip-text text-transparent bg-gradient-to-r from-magenta via-citrus to-aqua">
           Brum AI Team
