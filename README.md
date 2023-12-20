@@ -1,7 +1,5 @@
 <p align="center">
-  <a href="https://getbootstrap.com/">
-    <img src="BRUMAI_MANDARIN@2x.png" alt="Bootstrap logo" width="200">
-  </a>
+    <img src="./public/assets/orange_logo.png" alt="BrumAI logo" width="200">
 </p>
 
 <h3 align="center">BrumAI Website</h3>

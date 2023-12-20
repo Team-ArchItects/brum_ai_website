@@ -45,10 +45,10 @@ export default function Dropdown({ pages }) {
           Events
         </Link>
         <Link href="/aboutus" className="ml-3 bg-navy text-white">
-          About us
+          About
         </Link>
         <Link href="/contact" className="ml-3 bg-navy text-white">
-          Contact us
+          Contact
         </Link>
       </div>
       <div className="hidden md:inline">
