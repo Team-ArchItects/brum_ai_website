@@ -17,14 +17,9 @@ export default function AboutUsMap({ data }) {
         <h3 className="text-citrus">{data.name}</h3>
         <p className="italic">{data.role}</p>
         <p className="">{data.description}</p>
-        <a
-          href={data.linkedin}
-          target="_blank"
-          rel="noopener noreferrer"
-          className=""
-        >
-          <LinkedInImage />
-        </a>
+        
+          <LinkedInImage data={data.linkedin}/>
+        
       </div>
     </section>
   );
