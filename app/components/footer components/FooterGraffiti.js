@@ -19,20 +19,20 @@ export default function FooterGraffiti() {
   }
 
   return (
-    <div className=" flex z-0">
+    <div className=" flex z-0 overflow-x-hidden">
       <Image
         src={src}
         alt="Footer graffiti"
         width={1800}
         height={100}
-        className="h-40 w-6/12 scale-x-[-1]"
+        className="h-40 w-[51%] scale-x-[-1] mr-[-1px]"
       />
       <Image
         src={src}
         alt="Footer graffiti"
         width={2000}
         height={160}
-        className="w-6/12 h-40 ml-[-1px]"
+        className="w-[51%] h-40 ml-[-1px]"
       />
     </div>
   );
