@@ -39,7 +39,7 @@ export default function EventSection() {
         <h1 className="mt-8 text-4xl md:text-5xl text-center p-4 bg-clip-text text-transparent bg-gradient-to-r from-magenta via-citrus to-aqua">
           Upcoming Events
         </h1>
-        <div className="w-full lg:w-9/12 grid grid-cols-1  2xl:grid-cols-2 gap-x-4 place-items-center px-2 mb-5">
+        <div className="w-full lg:w-9/12 grid grid-cols-1 2xl:grid-cols-2 gap-x-4 place-items-center px-2 mb-5">
           {eventsList.length === 0 ? (
             <h3 className="text-4xl text-black dark:text-white my-10">
               No events scheduled at the moment, please check back soon!
