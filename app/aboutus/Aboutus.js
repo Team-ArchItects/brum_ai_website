@@ -10,7 +10,7 @@ export default function AboutUsMap({ data }) {
           alt={`Profile photo of ${data.name}`}
           width={150}
           height={150}
-          className="rounded-full aspect-auto aspect-[100/99]"
+          className="rounded-full aspect-[100/99]"
         />
       </div>
       <div className="col-span-2 px-4">

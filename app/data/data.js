@@ -132,10 +132,8 @@ export const homepageData = {
 };
 
 export const aboutUsCopy = {
-  title: 
-  "About Us",
-  aboutUsP1: 
-  "BrumAI is the home of AI in the Midlands.",
+  title: "About Us",
+  aboutUsP1: "BrumAI is the home of AI in the Midlands.",
   aboutUsP2:
     "We are a dynamic community dedicated to fostering innovation, collaboration, and learning in the field of Artificial Intelligence.",
   aboutUsP3:
@@ -190,36 +188,42 @@ export const websiteTeamData = [
   {
     id: 1,
     name: "David Mason",
+    role: "Full Stack Developer",
     imageUrl: "/assets/people_photos/david.jpg",
     linkedin: "https://www.linkedin.com/in/davidianmason1702/",
   },
   {
     id: 2,
     name: "Cal Woodford",
+    role: "Full Stack Developer",
     imageUrl: "/assets/people_photos/cal.jpg",
     linkedin: "https://www.linkedin.com/in/callumwoodford/",
   },
   {
     id: 3,
     name: "Tay Khan",
+    role: "Full Stack Developer",
     imageUrl: "/assets/people_photos/tay.jpg",
     linkedin: "https://www.linkedin.com/in/tay-khan/",
   },
   {
     id: 4,
     name: "Samantha German",
+    role: "Full Stack Developer",
     imageUrl: "/assets/people_photos/sam.jpg",
     linkedin: "https://www.linkedin.com/in/samantha-german-241265289/",
   },
   {
     id: 5,
     name: "Alexander Brown",
+    role: "Full Stack Developer",
     imageUrl: "/assets/people_photos/alex.jpg",
     linkedin: "https://www.linkedin.com/in/alexgeoffrey/",
   },
   {
     id: 6,
     name: "Katarzyna Baginska",
+    role: "Full Stack Developer",
     imageUrl: "/assets/people_photos/kat.jpg",
     linkedin: "https://www.linkedin.com/in/katarzyna-baginska-0baa4a152/",
   },
