@@ -13,10 +13,9 @@ const getListData = (value, eventsList) => {
         type: "warning",
         content: elem.event_name,
         link: elem.meetup_link
-      })
-      console.log("Event date string: ", elemDateString)
-    }
-  })
+      });
+    };
+  });
 
   // types: warning (orange), success (green), error (red)
 

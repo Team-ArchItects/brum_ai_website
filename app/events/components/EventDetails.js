@@ -6,6 +6,7 @@ import EventCalendar from "./Calendar";
 import CalendarSwitcher from "./Switch";
 import EventList from "./EventList";
 
+
 export default function EventDetails() {
   const [eventsList, setEventsList] = useState(null);
   const [timeFrame, setTimeFrame] = useState("future");

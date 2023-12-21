@@ -38,7 +38,7 @@ export const ContactUsForm = () => {
         onSubmit={sendEmail}
         className="text-center mt-8 w-10/12 max-w-[600px] flex flex-col justify-center items-center"
       >
-        <label className="newlabel w-full " for="user_name">
+        <label className="newlabel w-full" htmlFor="user_name">
           Name
         </label>
         <input
@@ -48,7 +48,7 @@ export const ContactUsForm = () => {
           required
           id="user_name"
         />
-        <label className="newlabel w-full " for="user_email">
+        <label className="newlabel w-full " htmlFor="user_email">
           Email
         </label>
         <input
@@ -58,7 +58,7 @@ export const ContactUsForm = () => {
           type="email"
           name="user_email"
         />
-        <label className="newlabel w-full " for="user_subject">
+        <label className="newlabel w-full " htmlFor="user_subject">
           Subject
         </label>
         <select
@@ -75,7 +75,7 @@ export const ContactUsForm = () => {
           <option value="General">General</option>
           
         </select>
-        <label className="newlabel w-full " for="message">
+        <label className="newlabel w-full " htmlFor="message">
           Message
         </label>
         <textarea

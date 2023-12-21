@@ -1,8 +1,19 @@
 import Button from "@/app/components/Button";
 import Image from "next/image";
 
+
 export default function EventCard({ eventData, timeFrame }) {
+
   const date = new Date(eventData.start_date);
+
+  let stringDate = date.toString();
+  // let month = stringDate.substring(4, 7);
+  let monthArray = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
+  let month = date.getMonth()
+  let day = stringDate.substring(8, 11);
+  let year = stringDate.substring(10, 15)
+
+
   const image = eventData.image_url || "assets/placeholder_event_image.jpg";
   const imageAltText = eventData.image_alt || "Placeholder photo";
   return (
@@ -31,7 +42,7 @@ export default function EventCard({ eventData, timeFrame }) {
         <div className="flex flex-col justify-between py-3">
           <p>
             <span className="font-semibold underline">Date</span>:{" "}
-            {`${date.toString().substring(4, 15)}`}
+            {`${day + monthArray[month] + year}`}
           </p>
           {timeFrame === "future" && (
             <p>
