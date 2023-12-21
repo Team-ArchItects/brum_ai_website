@@ -4,7 +4,7 @@ import LinkedInImage from "./LinkedInImage";
 export default function AboutUsMap({ data }) {
   return (
     <section className="grid grid-cols-3">
-      <div className="col-span-1 flex items-start p-3">
+      <div className="col-span-1 flex items-start flex-row-reverse p-3">
         <Image
           src={data.imageUrl}
           alt={`Profile photo of ${data.name}`}
