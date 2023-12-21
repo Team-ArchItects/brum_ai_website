@@ -7,7 +7,7 @@ export default function Footer({ data }) {
     <section className="flex flex-col w-screen justify-between min-w-[360px] ">
       <FooterGraffiti />
       <footer className="flex flex-col w-screen justify-between min-w-[360px] pt-3 bg-black text-white dark:bg-white dark:text-black">
-        <div className="flex flex-wrap justify-center space-x-4 items-center text-center z-10">
+        <div className="grid place-items-center gap-y-4 sm:grid-cols-2 md:flex md:flex-wrap justify-center space-x-4 items-center text-center z-10">
           {data.map((sponsorsList) => {
             return <SponsorsList key={sponsorsList.id} data={sponsorsList} />;
           })}
