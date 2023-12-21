@@ -32,7 +32,7 @@ export default function Dropdown({ pages }) {
           ref={menuRef}
           id="dropdownDefaultButton"
           data-dropdown-toggle="dropdown"
-          className="text-white bg-navy hover:bg-gray-700 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center lg:hidden"
+          className="text-white bg-navy hover:bg-gray-700 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center ms:hidden"
           type="button"
         >
           Menu{" "}
@@ -55,7 +55,7 @@ export default function Dropdown({ pages }) {
         {dropdown && (<div
           ref={dropdownRef}
           id="dropdown"
-          className={`z-10 absolute left-3 top-16 bg-gray-700 divide-y divide-gray-100 rounded-lg shadow w-36 lg:hidden`}
+          className={`z-10 absolute left-3 top-16 bg-gray-700 divide-y divide-gray-100 rounded-lg shadow w-36 ms:hidden`}
         >
           <ul
             className="py-2 text-sm text-white"
@@ -71,7 +71,7 @@ export default function Dropdown({ pages }) {
         </div>)}
       </div>
 
-      <div className="w-full hidden lg:flex items-center ">
+      <div className="w-full hidden ms:flex items-center ">
         <Link href="/" className="ml-3 bg-navy text-white ">
           Homepage
         </Link>
