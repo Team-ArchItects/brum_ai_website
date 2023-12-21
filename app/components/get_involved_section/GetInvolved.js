@@ -1,3 +1,4 @@
+import Link from 'next/link'
 export default function GetInvolved({ data }) {
 
   return (
@@ -15,7 +16,7 @@ export default function GetInvolved({ data }) {
         <p className="font-bold  self-start py-4">
           {data.sponsorTitle}
         </p>
-        <p className=" dark:bg-white bg-black">{data.sponsorCopyTop}</p>
+        <p className=" dark:bg-white bg-black">{data.sponsorCopyTop}<Link href="/contact" className="text-citrus hover:text-orange-600"> Contact us now!</Link></p>
         <br />
         <p className="dark:bg-white bg-black">{data.sponsorCopyBottom}</p>
       </div>

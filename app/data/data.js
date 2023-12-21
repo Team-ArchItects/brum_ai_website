@@ -127,7 +127,7 @@ export const homepageData = {
     "BRUM.AI aims to be at the centre of this growth. Be part of our community-driven group managed by those at the cutting edge of AI. From helping to promote an event to initiatives on reaching new goals, get involved and play your part. Contact Us now!",
   sponsorTitle: "SPONSOR US",
   sponsorCopyTop:
-    "Help us make the Midlands the home of AI in the UK. Interested to hear about our sponsorship packages? Can you host our meetups? Contact us now!",
+    "Help us make the Midlands the home of AI in the UK. Interested to hear about our sponsorship packages? Can you host our meetups?",
   sponsorCopyBottom: "",
 };
 
