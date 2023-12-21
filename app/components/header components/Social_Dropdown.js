@@ -1,17 +1,30 @@
 "use client";
 
-import { useState } from "react";
+import { useRef, useState } from "react";
 import SocialsList from "./Socials";
 
 export default function SocialDropdown({ data }) {
-  const [dropdown, setDropdown] = useState("hidden");
+  const [dropdown, setDropdown] = useState(false);
+  const menuRef = useRef();
+  const dropdownRef = useRef();
+
   function handleOnClick() {
-    dropdown === "hidden" ? setDropdown("block") : setDropdown("hidden");
+    setDropdown(prev => !prev)
   };
+
+  if(typeof window !== 'undefined') {
+    window.addEventListener('click', (e) => {
+      if(e.target !== dropdownRef.current && e.target !== menuRef.current){
+        setDropdown(false);
+      };
+    });
+  };
+
   return (
     <section className="flex">
       <button
         onClick={() => handleOnClick()}
+        ref={menuRef}
         id="socialDropdownDefaultButton"
         data-dropdown-toggle="dropdown"
         className="text-white bg-navy hover:bg-gray-700 font-medium rounded-lg text-sm px-2.5 py-2.5 text-center inline-flex items-center dark:bg-navy md:hidden"
@@ -35,7 +48,8 @@ export default function SocialDropdown({ data }) {
         <span className="text-navy hover:bg-grey-700">_</span>Socials
       </button>
 
-      <div
+      {dropdown && (<div
+      ref={dropdownRef}
         id="dropdown"
         className={`z-10 ${dropdown} absolute right-4 top-16 bg-gray-700 divide-y divide-gray-100 rounded-lg shadow w-20 flex justify-end items-center flex-col md:hidden`}
       >
@@ -44,10 +58,10 @@ export default function SocialDropdown({ data }) {
           aria-labelledby="socialDropdownDefaultButton"
         >
           {data.map((socialsList) => {
-            return <SocialsList key={socialsList.id} data={socialsList} />;
+            return <SocialsList key={socialsList.id} data={socialsList} handleOnClick={handleOnClick} />;
           })}
         </ul>
-      </div>
+      </div>)}
     </section>
   );
 }
