@@ -1,6 +1,6 @@
 export default function NextEventsMap({ data }) {
   const date = new Date(data.start_date);
-const image = data.image_url || "assets/placeholder_event_image.jpg";
+const image = data.image_url || "assets/brumai_placeholder_event.jpg";
   return (
     <a href={`${data.meetup_link}`} target="_blank" rel="noopener noreferrer"className="w-fit">
       <article

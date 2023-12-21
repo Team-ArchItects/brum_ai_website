@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function EventCard({ eventData, timeFrame }) {
   const date = new Date(eventData.start_date);
-  const image = eventData.image_url || "assets/placeholder_event_image.jpg";
+  const image = eventData.image_url || "assets/brumai_placeholder_event.jpg";
   const imageAltText = eventData.image_alt || "Placeholder photo";
   return (
     <article className="w-full sm:w-11/12 md:w-9/12 border-2 border-citrus rounded-2xl my-5 p-5 ">
