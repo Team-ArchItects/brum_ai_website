@@ -131,16 +131,18 @@ Please see the data file located at 'app/data/data.js' to make ammendments to th
 ## Sponsors
 
 <div>
-<img src="public/assets/huel_black.png" alt="" height="100">
-<img src="public/assets/aston_black.png" alt="" height="100">
-<img src="public/assets/google-developers-logo-png-event-details-2480.png" alt="" height="100">
-<img src="public/assets/DRPG_logo_MASTER_BLACK.png" alt="" height="100">
+<img src="./public/assets/astonuniversity.png" alt="" height="100">
+<img src="./public/assets/DRPG_logo_MASTER_BLACK.png" alt="" height="100">
+<img src="./public/assets/huel_logo_black.png" alt="" height="100">
+<img src="./public/assets/wealth_colour.png" alt="" height="100">
+<img src="./public/assets/soc_logo.png" alt="" height="100">
+<img src="./public/assets/google_dev_logo.png" alt="" height="100">
 </div>
 
 ## Buy_Us_A_Coffee
 
 <a href="https://www.buymeacoffee.com/brumai">
-<img src="public/assets/buysusacoffee.jpg" href= alt="" width="150px">
+<img src="./public/assets/buyusacoffee.jpg" href= alt="" width="150px">
 </a>
 
 <div></div>
