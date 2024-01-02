@@ -6,11 +6,11 @@ import NextEventsMap from "./NextEventsMap";
 import Button from "../Button";
 
 const todayDate = new Date();
-const newDate = `${todayDate.getFullYear()}-${todayDate.getMonth()}-${todayDate.getDate()}`;
+const newDate = `${todayDate.getFullYear()}-${todayDate.getMonth() + 1}-${todayDate.getDate()}`;
 
 export default function EventSection() {
   const [eventsList, setEventsList] = useState([]);
-
+  
   useEffect(() => {
     const fetchEvents = async () => {
       const { data, error } = await supabase
@@ -24,7 +24,7 @@ export default function EventSection() {
         console.error("Error:", error.message);
         return;
       }
-
+      
       if (data) {
         setEventsList(data);
       }
